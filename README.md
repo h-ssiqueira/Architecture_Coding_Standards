@@ -4,39 +4,50 @@ Useful references for ISOs (International Organization for Standardization) and 
 ___
 ## Cryptography && Hashing && Security
 
-- [RFC 1321 - The MD5 Message-Digest Algorithm](https://www.rfc-editor.org/rfc/rfc1321.html) - Update: [RFC 6151 - Updated Security Considerations for the MD5 Message-Digest and the HMAC-MD5 Algorithms](https://www.rfc-editor.org/rfc/rfc6151) - MD5
-- [RFC 3174 - US Secure Hash Algorithm 1 (SHA1)](https://www.rfc-editor.org/rfc/rfc3174.html) - SHA1
-- [RFC 6234 - US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)](https://www.rfc-editor.org/rfc/rfc6234.html) - SHA2
-- [RFC 9106 - Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications](https://www.rfc-editor.org/rfc/rfc9106.html) - Argon2
+Subject | RFC
+:---: | :---:
+MD5 | [RFC 1321 - The MD5 Message-Digest Algorithm](https://www.rfc-editor.org/rfc/rfc1321.html)<br>[RFC 6151 - Updated Security Considerations for the MD5 Message-Digest and the HMAC-MD5 Algorithms](https://www.rfc-editor.org/rfc/rfc6151)
+SHA1 | [RFC 3174 - US Secure Hash Algorithm 1 (SHA1)](https://www.rfc-editor.org/rfc/rfc3174.html)
+SHA2 | [RFC 6234 - US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)](https://www.rfc-editor.org/rfc/rfc6234.html)
+Argon2 | [RFC 9106 - Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications](https://www.rfc-editor.org/rfc/rfc9106.html)
+Hashing and encoding algorithms | [RFC 9380 - Hashing to Elliptic Curves](https://www.rfc-editor.org/rfc/rfc9380.html#name-related-work)
 
 [Back to top](#architecture-and-coding-standards)
 ___
 ## Datatypes
 
-- [ISO 8601 - Data elements and interchange formats — Information interchange Representation of dates and times](https://archive.org/details/iso-tc154-wg5_n0038_iso_wd_8601-1_2016-02-16) - Date representation
+Subject | RFC
+:---: | :---:
+Datetime representation | [ISO 8601 - Data elements and interchange formats — Information interchange Representation of dates and times](https://archive.org/details/iso-tc154-wg5_n0038_iso_wd_8601-1_2016-02-16)
 
 [Back to top](#architecture-and-coding-standards)
 ___
 ## Formatting
 
-- [RFC 8259 - The JavaScript Object Notation (JSON) Data Interchange Format](https://www.rfc-editor.org/rfc/rfc8259.html) - JSON
-- [RFC 9512 - YAML Media Type](https://www.rfc-editor.org/rfc/rfc9512.html) - YAML
+Subject | RFC
+:---: | :---:
+JSON | [RFC 8259 - The JavaScript Object Notation (JSON) Data Interchange Format](https://www.rfc-editor.org/rfc/rfc8259.html)
+YAML | [RFC 9512 - YAML Media Type](https://www.rfc-editor.org/rfc/rfc9512.html)
 
 [Back to top](#architecture-and-coding-standards)
 ___
 ## Networking
 
-- [RFC 768 - User Datagram Protocol](https://www.rfc-editor.org/rfc/rfc768.html) - UDP
-- [RFC 791 - Internet Protocol](https://datatracker.ietf.org/doc/html/rfc791) - IPV4
-- [RFC 8200 - Internet Protocol, Version 6 (IPv6) Specification](https://datatracker.ietf.org/doc/html/rfc8200) - IPV6
-- [RFC 9293 - Transmission Control Protocol](https://www.rfc-editor.org/rfc/rfc9293.html) - TCP
+Subject | RFC
+:---: | :---:
+UDP | [RFC 768 - User Datagram Protocol](https://www.rfc-editor.org/rfc/rfc768.html)
+IPV4 | [RFC 791 - Internet Protocol](https://datatracker.ietf.org/doc/html/rfc791)
+IPV6 | [RFC 8200 - Internet Protocol, Version 6 (IPv6) Specification](https://datatracker.ietf.org/doc/html/rfc8200)
+TCP | [RFC 9293 - Transmission Control Protocol](https://www.rfc-editor.org/rfc/rfc9293.html)
 
 [Back to top](#architecture-and-coding-standards)
 ___
 ### REST APIs && Backend
-
-- [RFC 8820 - URI Design and Ownership](https://www.rfc-editor.org/rfc/rfc8820.html)
-- [RFC 9110 - HTTP Semantics](https://datatracker.ietf.org/doc/rfc9110/) [ALT](https://www.rfc-editor.org/rfc/rfc9110.html) - HTTP Standards
+Subject | RFC
+:---: | :---:
+URI Design | [RFC 8820 - URI Design and Ownership](https://www.rfc-editor.org/rfc/rfc8820.html)
+HTTP Standards | [RFC 9110 - HTTP Semantics](https://datatracker.ietf.org/doc/rfc9110/) [ALT](https://www.rfc-editor.org/rfc/rfc9110.html)
+HTTP Protocols and Security | [RFC 9205 - Building Protocols with HTTP](https://www.rfc-editor.org/rfc/rfc9205.html)
 
 [Back to top](#architecture-and-coding-standards)
 ___
