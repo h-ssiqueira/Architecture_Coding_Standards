@@ -48,6 +48,7 @@ Subject | RFC
 URI Design | [RFC 8820 - URI Design and Ownership](https://www.rfc-editor.org/rfc/rfc8820.html)
 HTTP Standards | [RFC 9110 - HTTP Semantics](https://datatracker.ietf.org/doc/rfc9110/) [ALT](https://www.rfc-editor.org/rfc/rfc9110.html)
 HTTP Protocols and Security | [RFC 9205 - Building Protocols with HTTP](https://www.rfc-editor.org/rfc/rfc9205.html)
+HTTP APIs Problem Details | [RFC 9457 - Problem Details for HTTP APIs](https://www.rfc-editor.org/rfc/rfc9457.html)
 
 [Back to top](#architecture-and-coding-standards)
 ___
