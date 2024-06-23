@@ -18,7 +18,7 @@ ___
 
 Subject | RFC
 :---: | :---:
-Datetime representation | [ISO 8601 - Data elements and interchange formats — Information interchange Representation of dates and times](https://archive.org/details/iso-tc154-wg5_n0038_iso_wd_8601-1_2016-02-16)
+Datetime representation | [ISO 8601 - Data elements and interchange formats - Information interchange Representation of dates and times](https://archive.org/details/iso-tc154-wg5_n0038_iso_wd_8601-1_2016-02-16)<br>[RFC 9557 - Date and Time on the Internet: Timestamps with Additional Information](https://www.rfc-editor.org/rfc/rfc9557.html)
 
 [Back to top](#architecture-and-coding-standards)
 ___
