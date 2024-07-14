@@ -16,6 +16,7 @@ SHA2 | [RFC 6234 - US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)](
 Argon2 | [RFC 9106 - Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications](https://www.rfc-editor.org/rfc/rfc9106.html)
 Hashing and encoding algorithms | [RFC 9380 - Hashing to Elliptic Curves](https://www.rfc-editor.org/rfc/rfc9380.html#name-related-work)
 JWT | [RFC 7519 - JSON Web Token (JWT)](https://www.rfc-editor.org/info/rfc7519)<br>[RFC 8725 - JSON Web Token Best Current Practices](https://www.rfc-editor.org/info/rfc8725)
+OAuth2 | [RFC 6749 - The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749.html)
 
 [Back to top](#architecture-and-coding-standards)
 ___
