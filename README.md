@@ -20,11 +20,12 @@ OAuth2 | [RFC 6749 - The OAuth 2.0 Authorization Framework](https://www.rfc-edit
 
 [Back to top](#architecture-and-coding-standards)
 ___
-## Datatypes
+## Datatypes and Representations
 
 Subject | RFC
 :---: | :---:
 Datetime representation | [ISO 8601 - Data elements and interchange formats - Information interchange Representation of dates and times](https://archive.org/details/iso-tc154-wg5_n0038_iso_wd_8601-1_2016-02-16)<br>[RFC 3339 - Date and Time on the Internet: Timestamps](https://datatracker.ietf.org/doc/html/rfc3339)<br>[RFC 9557 - Date and Time on the Internet: Timestamps with Additional Information](https://www.rfc-editor.org/rfc/rfc9557.html)
+Representation of currencies | [ISO 4217 - Codes for the representation of currencies](https://www.iban.com/currency-codes)
 
 [Back to top](#architecture-and-coding-standards)
 ___
