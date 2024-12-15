@@ -1,6 +1,13 @@
 # Architecture and Coding Standards
 Useful references for ISOs (International Organization for Standardization) and RFCs (Request for Comments) related to architecture and coding standards.
 
+- [Cryptography && Hashing && Security](#cryptography--hashing--security)
+- [Datatypes && Representations](#datatypes--representations)
+- [Formatting](#formatting)
+- [Networking](#networking)
+    - [REST APIs && Backend](#rest-apis--backend)
+- [Software && Product](#software--product)
+- [References](#references)
 ___
 ## Cryptography && Hashing && Security
 
@@ -16,11 +23,13 @@ SHA2 | [RFC 6234 - US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)](
 Argon2 | [RFC 9106 - Argon2 Memory-Hard Function for Password Hashing and Proof-of-Work Applications](https://www.rfc-editor.org/rfc/rfc9106.html)
 Hashing and encoding algorithms | [RFC 9380 - Hashing to Elliptic Curves](https://www.rfc-editor.org/rfc/rfc9380.html#name-related-work)
 JWT | [RFC 7519 - JSON Web Token (JWT)](https://www.rfc-editor.org/info/rfc7519)<br>[RFC 8725 - JSON Web Token Best Current Practices](https://www.rfc-editor.org/info/rfc8725)
-OAuth2 | [RFC 6749 - The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749.html)
+OAuth2 | [RFC 6749 - The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749.html)<br>[RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://www.rfc-editor.org/rfc/rfc6750.html)<br>[RFC 9207 - OAuth 2.0 Authorization Server Issuer Identification](https://www.rfc-editor.org/rfc/rfc9207.html)
+HSTS | [RFC 6797 - HTTP Strict Transport Security (HSTS)](https://www.rfc-editor.org/rfc/rfc6797.html)
+Files | [RFC 9116 - A File Format to Aid in Security Vulnerability Disclosure](https://www.rfc-editor.org/rfc/rfc9116)
 
 [Back to top](#architecture-and-coding-standards)
 ___
-## Datatypes and Representations
+## Datatypes && Representations
 
 Subject | RFC
 :---: | :---:
@@ -48,13 +57,15 @@ Email | [RFC 5322 - Internet Message Format](https://www.rfc-editor.org/rfc/inli
 WebSocket | [RFC 6455 - The WebSocket Protocol](https://datatracker.ietf.org/doc/html/rfc6455)
 IPV6 | [RFC 8200 - Internet Protocol, Version 6 (IPv6) Specification](https://datatracker.ietf.org/doc/html/rfc8200)
 TCP | [RFC 9293 - Transmission Control Protocol](https://www.rfc-editor.org/rfc/rfc9293.html)
+SMTP | [RFC 5321 - Simple Mail Transfer Protocol](https://www.rfc-editor.org/rfc/rfc5321.html)
+LDAP | [RFC 2253 - Lightweight Directory Access Protocol (v3): UTF-8 String Representation of Distinguished Names](https://www.rfc-editor.org/rfc/rfc2253)<br>[RFC 4515 - Lightweight Directory Access Protocol (LDAP): String Representation of Search Filters](https://www.rfc-editor.org/rfc/rfc4515)
 
 [Back to top](#architecture-and-coding-standards)
 ___
 ### REST APIs && Backend
 Subject | RFC
 :---: | :---:
-URI Syntax | [RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax](https://datatracker.ietf.org/doc/html/rfc3986)
+URI Syntax | [RFC 2396 - Uniform Resource Identifiers (URI): Generic Syntax](https://www.rfc-editor.org/rfc/rfc2396.html)<br>[RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax](https://datatracker.ietf.org/doc/html/rfc3986)
 URI Design | [RFC 8820 - URI Design and Ownership](https://www.rfc-editor.org/rfc/rfc8820.html)
 PATCH | [RFC 5789 - PATCH Method for HTTP](https://datatracker.ietf.org/doc/html/rfc5789)
 HTTP/1.0 | [RFC 1945 - Hypertext Transfer Protocol -- HTTP/1.0](https://www.rfc-editor.org/info/rfc1945)
@@ -64,13 +75,16 @@ HTTP/3 | [RFC 9114 - HTTP/3](https://www.rfc-editor.org/info/rfc9114)
 HTTPS | [RFC 2660 - The Secure HyperText Transfer Protocol](https://www.rfc-editor.org/info/rfc2660)
 HTTP Standards | [RFC 9110 - HTTP Semantics](https://datatracker.ietf.org/doc/rfc9110/) [ALT](https://www.rfc-editor.org/rfc/rfc9110.html)<br>[RFC 9111 - HTTP Caching](https://datatracker.ietf.org/doc/rfc9111/)
 HTTP Protocols and Security | [RFC 9205 - Building Protocols with HTTP](https://www.rfc-editor.org/rfc/rfc9205.html)
+HTTP State Management | [RFC 2109 - HTTP State Management Mechanism](https://www.rfc-editor.org/rfc/rfc2109.html)<br>[RFC 2965 - HTTP State Management Mechanism](https://www.rfc-editor.org/rfc/rfc2965.html)<br>[RFC 6265 - HTTP State Management Mechanism](https://www.rfc-editor.org/rfc/rfc6265.html)
 HTTP APIs Problem Details | [RFC 7807 - Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/html/rfc7807)<br>[RFC 9457 - Problem Details for HTTP APIs](https://www.rfc-editor.org/rfc/rfc9457.html)
+TLS | [RFC 2246 - The TLS Protocol Version 1.0](https://www.rfc-editor.org/rfc/rfc2246.html)<br>[RFC 4346 - The Transport Layer Security (TLS) Protocol Version 1.1](https://www.rfc-editor.org/rfc/rfc4346.html)<br>[RFC 5246 - The Transport Layer Security (TLS) Protocol Version 1.2](https://www.rfc-editor.org/rfc/rfc5246.html)<br>[RFC 6353 - Transport Layer Security (TLS) Transport Model for the Simple Network Management Protocol (SNMP)](https://www.rfc-editor.org/rfc/rfc6353.html)<br>[RFC 9325 - Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)](https://www.rfc-editor.org/rfc/rfc9325.html)<br>[RFC 7507 - TLS Fallback Signaling Cipher Suite Value (SCSV) for Preventing Protocol Downgrade Attacks](https://datatracker.ietf.org/doc/html/rfc7507)<br>[RFC 7919 - Negotiated Finite Field Diffie-Hellman Ephemeral Parameters for Transport Layer Security (TLS)](https://datatracker.ietf.org/doc/html/rfc7919)
 
 [Back to top](#architecture-and-coding-standards)
 ___
 ## Software && Product
 
 - [ISO 25xxx](https://en.wikipedia.org/wiki/List_of_ISO_standards_24000%E2%80%9325999)
+- [ISO 27xxx](https://en.wikipedia.org/wiki/List_of_ISO_standards_26000%E2%80%9327999#ISO_27000_%E2%80%93_ISO_27999)
 
 [Back to top](#architecture-and-coding-standards)
 ___
