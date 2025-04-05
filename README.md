@@ -26,6 +26,8 @@ JWT | [RFC 7519 - JSON Web Token (JWT)](https://www.rfc-editor.org/info/rfc7519)
 OAuth2 | [RFC 6749 - The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749.html)<br>[RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://www.rfc-editor.org/rfc/rfc6750.html)<br>[RFC 9207 - OAuth 2.0 Authorization Server Issuer Identification](https://www.rfc-editor.org/rfc/rfc9207.html)
 HSTS | [RFC 6797 - HTTP Strict Transport Security (HSTS)](https://www.rfc-editor.org/rfc/rfc6797.html)
 Files | [RFC 9116 - A File Format to Aid in Security Vulnerability Disclosure](https://www.rfc-editor.org/rfc/rfc9116)
+ASVS | [Application Security Verification Standard](https://github.com/OWASP/ASVS)
+OWASP | [Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
 
 [Back to top](#architecture-and-coding-standards)
 ___
@@ -85,6 +87,63 @@ ___
 
 - [ISO 25xxx](https://en.wikipedia.org/wiki/List_of_ISO_standards_24000%E2%80%9325999)
 - [ISO 27xxx](https://en.wikipedia.org/wiki/List_of_ISO_standards_26000%E2%80%9327999#ISO_27000_%E2%80%93_ISO_27999)
+
+ISO | Detail
+:---: | :---:
+27000 | Overview and vocabulary
+27001 | Requirements
+27002 | Code of practice for information security controls
+27003 | Information security managgement systems - guidance
+27004 | Information security management - monitoring, measurement, analysis and evaluation
+27005 | Information security risk management
+27006 | Requirements for bodies providing audit and certification of information security management systems
+27007 | Guidelines for information security management systems auditing
+27008 | Guidelines for auditors on information security controls
+27009 | Sector-specific application of ISO/IEC 27001
+27010 | Information security management for inter-sector and inter-orgaanizational communications
+27011 | Code of practice for information security controls based on ISO/IEC 27002 for telecommunications organizations
+27013 | Guidance on the integraated implementation of ISO/IEC 27001 and ISO/IEC 20000
+27014 | Governance of information security
+27016 | Information security management - organizational economics
+27017 | Code of practice for information security controls based on ISO/IEC 27002 for cloud systems
+27018 | Code of practice for protection of personally identifiable information (PII) in public clouds acting as PII processors
+27019 | Information security management guidelines based on ISO/IEC 27002 for process control systems specific to the energy utility industry
+27023 | Mapping the revised editions of ISO/IEC 27001 and ISO/IEC 27002
+27031 | Guidelines for information and communication technology readiness for business continuity
+27032 | Guidelines for cybersecurity
+27033 | Network security
+27034 | Application security
+27035 | Information security incident management
+27036 | Information security for supplier relationships
+27037 | Guidelines for identification, collection, acquisition and preservations of digital evidence
+27038 | Specification for diggital redaction
+27039 | Selection, deployment and operations of intrusion detection and prevention systems
+27040 | Storage security
+27041 | Guidance on assuringg suitability and adequaacy of incident investigative method
+27042 | Guidelines for the analysis and interpretation of digital evidence
+27043 | Incident investigation principles and processes
+27050 | Electronic discovery
+27102 | Guidelines for cyber-insurance
+27103 | Cybersecurity
+27185 | Symbols to be used with cardiac rhythm management device labels, and information to be supplied
+27186 | Four-pole connector system for implantable cardiac rhythm management devices
+27327 | Air curtain units
+27427 | Nebulizing systems and components
+27500 | Rationale and general principles
+27527 | Health informatics - provider identification
+27550 | Privacy engineering for system cycle process
+27551 | Requirements for attribute-based unlinkable entity authentication
+27687 | Nanotechnologies - terminology and definitions
+27701 | Security techniques - extension of ISO/IEC 27001 and ISO/IEC 27002
+27729 | International Standard Name Identifier (ISNI)
+27730 | International Standard Collection Identifier (ISCI)
+27789 | Audit trails for electronic health records
+27790 | Document registry framework
+27799 | Information security management in health using ISO/IEC 27002
+27809 | Measures for ensuring patient safety of health software
+27931 | An application protocol for electronic dataa exchange in healthcare environments
+27932 | HL7 Clinical Document Architecture
+27951 | Common terminology services
 
 [Back to top](#architecture-and-coding-standards)
 ___
