@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Force Graph Example</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <div id="3d-graph"></div>
+
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+  <script src="https://unpkg.com/3d-force-graph"></script>
+
+  <script>
+    fetch('https://corsproxy.io/?https://storage.googleapis.com/kaggle-script-versions/252154912/output/graph_data.json?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20250724%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250724T001227Z&X-Goog-Expires=3600&X-Goog-SignedHeaders=host&X-Goog-Signature=530906803d936287d18c6ad0e91e57c14f949cf14ef5a3bf06c5933cf340fff0320735b38761606e3a5f10a9b9af0b0fde108acd7a1662d581fbbf72cf1c130bdb81289b60d7ff1947a86b41d9051972460ffaf8c4e277ccc9a0ac3a7852d7dccd90a161c5507f5150d84ffad526e89d09021acd4abf5d8fbda912decf038a826ba5b0fc3761f0f6b8426923652d141d36c29120c75e0198a48645229ff107644b0d56c3b483c65bfeeff9b367bb1a5b074b7a60b416d04ff7a07d7576d5c5386c4bf1e0db3795a630fd17d4cdda3424960d597ef87dabe35624b41c702c3d9efb66cd9a276b09198fc09299d9f3d737654aeaab9d8b0b493342d1f5dc22176e')
+      .then(res => res.json())
+      .then(raw => {
+        const data = {
+          nodes: raw.nodes,
+          links: raw.edges
+        };
+
+        const Graph = ForceGraph3D()(document.getElementById('3d-graph'))
+          .graphData(data)
+          .nodeLabel(node => `${node.id} - ${node.title}\nDate: ${node.date}\nStatus: ${node.status}`)
+          .nodeColor(node => node.color || '#888')
+          .nodeVal(node => node.size || 5)
+          .linkDirectionalParticles(1)
+          .linkDirectionalArrowLength(3)
+          .linkColor(() => '#ccc')
+          .backgroundColor('#101020');
+      })
+      .catch(err => {
+        console.error('Failed to load graph data:', err);
+      });
+  </script>
+</body>
+</html>
