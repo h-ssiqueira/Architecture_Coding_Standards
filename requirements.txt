@@ -1,0 +1,8 @@
+networkx
+pandas
+plotly
+beautifulsoup4
+lxml
+requests
+re
+json
