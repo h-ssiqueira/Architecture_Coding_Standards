@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RFCs</title>
+  <style>
+    body { margin: 0; background-color: #101020; }
+    canvas { display: block; }
+  </style>
+  <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="32x32">
+  <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="192x192">
+</head>
+<body>
+  <input id="search" placeholder="Enter RFC code..." />
+  <button onclick="findNode()">Find</button>
+
+  <div id="3d-graph"></div>
+
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+  <script src="https://unpkg.com/3d-force-graph"></script>
+
+  <script>
+    let graph;
+    fetch('https://raw.githubusercontent.com/h-ssiqueira/Architecture_Coding_Standards/refs/heads/data/graph_data.json')
+      .then(res => res.json())
+      .then(raw => {
+
+        const data = {
+          nodes: raw.nodes,
+          links: raw.edges
+        };
+
+        graph = ForceGraph3D()(document.getElementById('3d-graph'))
+          .graphData(data)
+          .nodeLabel(node => `${node.id} - ${node.title}\nDate: ${node.date}\nStatus: ${node.status}`)
+          .nodeColor(node => node.color || '#888')
+          .nodeVal(node => node.size || 5)
+          .linkDirectionalParticles(1)
+          .linkDirectionalArrowLength(3)
+          .linkColor(() => '#ccc')
+          .backgroundColor('#101020')
+          .onNodeClick(node => {
+            window.open(`https://www.rfc-editor.org/rfc/${node.id.match(/RFC\s*\d+/i)[0].replace(/\s+/g, '').toLowerCase()}`, '_blank')
+          });
+      })
+      .catch(err => {
+        console.error('Failed to load graph data:', err);
+      });
+
+      function findNode() {
+        const query = document.getElementById('search').value.trim();
+        if (!graph || !query) return;
+        const node = graph.graphData().nodes.find(n =>
+          n.id.startsWith('RFC\u00a0' + query)
+        );
+        if (node) {
+          graph.cameraPosition(
+            { x: node.x * 1.1, y: node.y * 1.1, z: node.z * 1.1 },
+            node,
+            500
+          );
+        } else {
+          alert("Node not found.");
+        }
+      }
+
+  </script>
+</body>
+</html>
