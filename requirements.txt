@@ -4,4 +4,3 @@ plotly
 beautifulsoup4
 lxml
 requests
-json
