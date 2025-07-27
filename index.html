@@ -16,7 +16,6 @@
 
   <div id="3d-graph"></div>
 
-  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
   <script src="https://unpkg.com/3d-force-graph"></script>
 
   <script>
@@ -47,23 +46,28 @@
         console.error('Failed to load graph data:', err);
       });
 
-      function findNode() {
-        const query = document.getElementById('search').value.trim();
-        if (!graph || !query) return;
-        const node = graph.graphData().nodes.find(n =>
-          n.id.startsWith('RFC\u00a0' + query)
+    function findNode() {
+      const query = document.getElementById('search').value.trim();
+      if (!graph || !query) return;
+      const node = graph.graphData().nodes.find(n =>
+        n.id.startsWith('RFC\u00a0' + query)
+      );
+      if (node) {
+        graph.cameraPosition(
+          { x: node.x * 1.1, y: node.y * 1.1, z: node.z * 1.1 },
+          node,
+          500
         );
-        if (node) {
-          graph.cameraPosition(
-            { x: node.x * 1.1, y: node.y * 1.1, z: node.z * 1.1 },
-            node,
-            500
-          );
-        } else {
-          alert("Node not found.");
-        }
+      } else {
+        alert("Node not found.");
       }
+    }
 
+    document.getElementById('search').addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        findNode();
+      }
+    });
   </script>
 </body>
 </html>
