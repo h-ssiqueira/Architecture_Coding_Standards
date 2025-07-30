@@ -78441,6 +78441,22 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09810",
+            "title": "Internet X.509 Public Key Infrastructure -- Certificate Management Protocol (CMP)",
+            "date": "July 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09811",
+            "title": "Internet X.509 Public Key Infrastructure -- HTTP Transfer for the Certificate Management Protocol (CMP)",
+            "date": "July 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09813 a.k.a.\u00a0BCP\u00a0243",
             "title": "Operational Considerations for Using TLS Pre-Shared Keys (TLS-PSKs) with RADIUS",
             "date": "July 2025",
@@ -89168,6 +89184,10 @@
             "target": "RFC\u00a09481"
         },
         {
+            "source": "RFC\u00a04210",
+            "target": "RFC\u00a09810"
+        },
+        {
             "source": "RFC\u00a04211",
             "target": "RFC\u00a09045"
         },
@@ -92512,6 +92532,10 @@
             "target": "RFC\u00a09480"
         },
         {
+            "source": "RFC\u00a05912",
+            "target": "RFC\u00a09810"
+        },
+        {
             "source": "RFC\u00a05918",
             "target": "RFC\u00a07358"
         },
@@ -93574,6 +93598,10 @@
         {
             "source": "RFC\u00a06712",
             "target": "RFC\u00a09480"
+        },
+        {
+            "source": "RFC\u00a06712",
+            "target": "RFC\u00a09811"
         },
         {
             "source": "RFC\u00a06716",
@@ -95810,6 +95838,14 @@
         {
             "source": "RFC\u00a09471",
             "target": "RFC\u00a01034"
+        },
+        {
+            "source": "RFC\u00a09480",
+            "target": "RFC\u00a09810"
+        },
+        {
+            "source": "RFC\u00a09480",
+            "target": "RFC\u00a09811"
         },
         {
             "source": "RFC\u00a09504",
