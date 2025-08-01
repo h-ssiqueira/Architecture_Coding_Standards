@@ -78433,6 +78433,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09808",
+            "title": "Content Delivery Network Interconnection (CDNI) Capacity Capability Advertisement Extensions",
+            "date": "July 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09809",
             "title": "X.509 Certificate Extended Key Usage (EKU) for Configuration, Updates, and Safety-Critical Communication",
             "date": "July 2025",
@@ -78499,6 +78507,14 @@
         {
             "id": "RFC\u00a09819",
             "title": "Argument Signaling for BGP Services in Segment Routing over IPv6 (SRv6)",
+            "date": "July 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09825",
+            "title": "Extensions to OSPF for Advertising Prefix Administrative Tags",
             "date": "July 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
