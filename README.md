@@ -1,6 +1,8 @@
 # Architecture and Coding Standards
 [![GitHub Pages](https://img.shields.io/badge/github_pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://h-ssiqueira.github.io/Architecture_Coding_Standards/)
 
+[`Click and try the graph visualization`](https://h-ssiqueira.github.io/Architecture_Coding_Standards/)
+
 Useful references for ISOs (International Organization for Standardization) and RFCs (Request for Comments) related to architecture and coding standards.
 
 - [Cryptography && Hashing && Security](#cryptography--hashing--security)
