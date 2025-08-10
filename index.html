@@ -41,6 +41,14 @@
           .onNodeClick(node => {
             window.open(`https://www.rfc-editor.org/rfc/${node.id.match(/RFC\s*\d+/i)[0].replace(/\s+/g, '').toLowerCase()}`, '_blank')
           });
+        
+        graph.d3Force('charge').strength(-30);
+        graph.d3VelocityDecay(0.3);
+
+        setTimeout(() => {
+          graph.d3Force('charge', null);
+          graph.d3Force('link', null);
+        }, 5000);
       })
       .catch(err => {
         console.error('Failed to load graph data:', err);
