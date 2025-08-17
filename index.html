@@ -34,9 +34,11 @@
           .nodeLabel(node => `${node.id} - ${node.title}\nDate: ${node.date}\nStatus: ${node.status}`)
           .nodeColor(node => node.color || '#888')
           .nodeVal(node => node.size || 5)
+          .nodeResolution(360)
           .linkDirectionalParticles(1)
           .linkDirectionalArrowLength(3)
           .linkColor(() => '#ccc')
+          .linkResolution(100)
           .backgroundColor('#101020')
           .onNodeClick(node => {
             window.open(`https://www.rfc-editor.org/rfc/${node.id.match(/RFC\s*\d+/i)[0].replace(/\s+/g, '').toLowerCase()}`, '_blank')
