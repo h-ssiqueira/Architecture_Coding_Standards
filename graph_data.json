@@ -78497,6 +78497,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09817",
+            "title": "Use Cases for In-Network Computing",
+            "date": "August 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09818",
             "title": "DHCPv6 Prefix Delegation on IPv6 Customer Edge (CE) Routers in LANs",
             "date": "July 2025",
