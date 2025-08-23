@@ -16660,8 +16660,8 @@
             "id": "RFC\u00a02083",
             "title": "PNG (Portable Network Graphics) Specification Version 1.0",
             "date": "March 1997",
-            "status": "Informational",
-            "color": "#2ca02c",
+            "status": "Historic",
+            "color": "#7f7f7f",
             "size": 20
         },
         {
@@ -78537,6 +78537,30 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09837",
+            "title": "The IPv6 VPN Service Destination Option",
+            "date": "August 2025",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09839",
+            "title": "Unicode Character Repertoire Subsets",
+            "date": "August 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09844",
+            "title": "Entering IPv6 Zone Identifiers in User Interfaces",
+            "date": "August 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a0859"
         },
         {
@@ -88705,10 +88729,6 @@
         },
         {
             "source": "RFC\u00a03986 a.k.a.\u00a0STD\u00a066",
-            "target": "RFC\u00a06874"
-        },
-        {
-            "source": "RFC\u00a03986 a.k.a.\u00a0STD\u00a066",
             "target": "RFC\u00a07320"
         },
         {
@@ -88734,6 +88754,10 @@
         {
             "source": "RFC\u00a04007",
             "target": "RFC\u00a07346"
+        },
+        {
+            "source": "RFC\u00a04007",
+            "target": "RFC\u00a09844"
         },
         {
             "source": "RFC\u00a04008",
@@ -93881,7 +93905,7 @@
         },
         {
             "source": "RFC\u00a06874",
-            "target": "RFC\u00a03986"
+            "target": "RFC\u00a09844"
         },
         {
             "source": "RFC\u00a06881 a.k.a.\u00a0BCP\u00a0181",
@@ -94716,6 +94740,10 @@
             "target": "RFC\u00a09110 a.k.a.\u00a0STD\u00a097"
         },
         {
+            "source": "RFC\u00a07622",
+            "target": "RFC\u00a09844"
+        },
+        {
             "source": "RFC\u00a07626",
             "target": "RFC\u00a09076"
         },
@@ -95046,6 +95074,10 @@
         {
             "source": "RFC\u00a08088",
             "target": "RFC\u00a09751"
+        },
+        {
+            "source": "RFC\u00a08089",
+            "target": "RFC\u00a09844"
         },
         {
             "source": "RFC\u00a08108",
