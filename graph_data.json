@@ -78281,6 +78281,22 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09787",
+            "title": "Guidance on End-to-End Email Security",
+            "date": "August 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09788",
+            "title": "Header Protection for Cryptographically Protected Email",
+            "date": "August 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09789",
             "title": "MPLS Network Actions (MNAs) Framework",
             "date": "July 2025",
@@ -95426,6 +95442,10 @@
         {
             "source": "RFC\u00a08540",
             "target": "RFC\u00a09260"
+        },
+        {
+            "source": "RFC\u00a08551",
+            "target": "RFC\u00a09788"
         },
         {
             "source": "RFC\u00a08553 part\u00a0of\u00a0BCP\u00a0222",
