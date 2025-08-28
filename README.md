@@ -60,6 +60,7 @@ Subject | RFC
 UDP | [RFC 768 - User Datagram Protocol](https://www.rfc-editor.org/rfc/rfc768.html)
 IPV4 | [RFC 791 - Internet Protocol](https://datatracker.ietf.org/doc/html/rfc791)
 Email | [RFC 5322 - Internet Message Format](https://www.rfc-editor.org/rfc/inline-errata/rfc5322.html)
+Email Authentication | [RFC 8616 - Email Authentication for Internationalized Mail](https://www.rfc-editor.org/rfc/rfc8616)
 WebSocket | [RFC 6455 - The WebSocket Protocol](https://datatracker.ietf.org/doc/html/rfc6455)
 IPV6 | [RFC 8200 - Internet Protocol, Version 6 (IPv6) Specification](https://datatracker.ietf.org/doc/html/rfc8200)
 TCP | [RFC 9293 - Transmission Control Protocol](https://www.rfc-editor.org/rfc/rfc9293.html)
