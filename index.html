@@ -26,6 +26,10 @@
     fetch('https://raw.githubusercontent.com/h-ssiqueira/Architecture_Coding_Standards/refs/heads/data/graph_data.json')
       .then(res => res.json())
       .then(raw => {
+        const nodeById = {};
+        raw.nodes.forEach(node => {
+          nodeById[node.id] = node;
+        });
 
         const data = {
           nodes: raw.nodes,
@@ -33,8 +37,13 @@
         };
 
         data.links.forEach(link => {
-          const a = data.nodes[link.source];
-          const b = data.nodes[link.target];
+          const a = nodeById[link.source];
+          const b = nodeById[link.target];
+
+          if (!a || !b) {
+            return;
+          }
+
           !a.neighbors && (a.neighbors = []);
           !b.neighbors && (b.neighbors = []);
           a.neighbors.push(b);
@@ -64,18 +73,22 @@
           .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
           .linkDirectionalParticleWidth(4)
           .onNodeHover(node => {
-            if ((!node && !highlightNodes.size) || (node && hoverNode === node)) return;
+            if ((!node && !highlightNodes.size) || (node && hoverNode === node))
+              return;
 
             highlightNodes.clear();
             highlightLinks.clear();
             if (node) {
               highlightNodes.add(node);
-              node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
-              node.links.forEach(link => highlightLinks.add(link));
+              if (node.neighbors) {
+                node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
+              }
+              if (node.links) {
+                node.links.forEach(l => highlightLinks.add(l));
+              }
             }
 
             hoverNode = node || null;
-
             updateHighlight();
           })
           .onLinkHover(link => {
@@ -90,7 +103,7 @@
 
             updateHighlight();
           });
-          
+
         graph.d3Force('charge').strength(-30);
         graph.d3VelocityDecay(0.3);
 
@@ -102,12 +115,12 @@
       .catch(err => {
         console.error('Failed to load graph data:', err);
       });
-    
+
     function updateHighlight() {
       graph.nodeColor(graph.nodeColor())
         .linkWidth(graph.linkWidth())
         .linkDirectionalParticles(graph.linkDirectionalParticles());
-    };
+    }
 
     function findNode() {
       const query = document.getElementById('search').value.trim();
