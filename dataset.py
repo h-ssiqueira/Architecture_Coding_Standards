@@ -41,7 +41,8 @@ for tr in page.find_all("tr"):
 df = pd.DataFrame(items, columns=['RFC','Title','Date','Info','Status'])
 for i, r in df.iterrows():
     if r['Status'] == None:
-        df.iloc[i] = ['RFC 1685','Writing X.400 O/R Names','August 1994','','Informational']
+        df.iloc[i] = ['RFC\u00a01685','Writing X.400 O/R Names','August 1994','','Informational']
+df["RFC"] = df["RFC"].str.extract(r'(?i)(RFC\s*\d+)', expand=False)
 
 updatesPattern = r'(Updates|Updated\sby)\s(RFC\s\d+(?:,\sRFC\s\d+)*)'
 obsoletesPattern = r'(Obsoletes|Obsoleted\sby)\s(RFC\s\d+(?:,\sRFC\s\d+)*)'
