@@ -6,6 +6,14 @@
   <style>
     body { margin: 0; background-color: #101020; }
     canvas { display: block; }
+    #search, button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 6px;
+      margin-right: 4px;
+      z-index: 10;
+    }
   </style>
   <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="32x32">
   <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="192x192">
@@ -27,22 +35,14 @@
       .then(res => res.json())
       .then(raw => {
         const nodeById = {};
-        raw.nodes.forEach(node => {
-          nodeById[node.id] = node;
-        });
+        raw.nodes.forEach(node => { nodeById[node.id] = node; });
 
-        const data = {
-          nodes: raw.nodes,
-          links: raw.edges
-        };
+        const data = { nodes: raw.nodes, links: raw.edges };
 
         data.links.forEach(link => {
           const a = nodeById[link.source];
           const b = nodeById[link.target];
-
-          if (!a || !b) {
-            return;
-          }
+          if (!a || !b) return;
 
           !a.neighbors && (a.neighbors = []);
           !b.neighbors && (b.neighbors = []);
@@ -59,39 +59,41 @@
           .graphData(data)
           .nodeLabel(node => `${node.id} - ${node.title}\nDate: ${node.date}\nStatus: ${node.status}`)
           .nodeColor(node => highlightNodes.has(node) ? node === hoverNode ? 'rgb(255,0,0,1)' : 'rgba(255,160,0,0.8)' : (node.color || '#888'))
-          .nodeVal(node => node.size || 5)
-          .nodeResolution(360)
-          .linkDirectionalParticles(1)
-          .linkDirectionalArrowLength(3)
+          .nodeVal(node => Math.min(node.size || 5, 20))
+          .nodeResolution(16)
+          .linkDirectionalArrowLength(link => highlightLinks.has(link) ? 3 : 0)
+          .linkDirectionalParticles(link => highlightLinks.has(link) ? 2 : 0)
           .linkColor(() => '#ccc')
-          .linkResolution(100)
+          .linkResolution(8)
           .backgroundColor('#101020')
           .onNodeClick(node => {
-            window.open(`https://www.rfc-editor.org/rfc/${node.id.match(/RFC\s*\d+/i)[0].replace(/\s+/g, '').toLowerCase()}`, '_blank')
+            window.open(`https://www.rfc-editor.org/rfc/${node.id.match(/RFC\\s*\\d+/i)[0].replace(/\\s+/g, '').toLowerCase()}`, '_blank')
           })
           .linkWidth(link => highlightLinks.has(link) ? 4 : 1)
-          .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
-          .linkDirectionalParticleWidth(4)
-          .onNodeHover(node => {
-            if ((!node && !highlightNodes.size) || (node && hoverNode === node))
-              return;
+          .linkDirectionalParticleWidth(4);
+
+        let hoverTimeout;
+        graph.onNodeHover(node => {
+          clearTimeout(hoverTimeout);
+          hoverTimeout = setTimeout(() => {
+            if ((!node && !highlightNodes.size) || (node && hoverNode === node)) return;
 
             highlightNodes.clear();
             highlightLinks.clear();
             if (node) {
               highlightNodes.add(node);
-              if (node.neighbors) {
-                node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
-              }
-              if (node.links) {
-                node.links.forEach(l => highlightLinks.add(l));
-              }
+              (node.neighbors || []).forEach(neighbor => highlightNodes.add(neighbor));
+              (node.links || []).forEach(l => highlightLinks.add(l));
             }
 
             hoverNode = node || null;
-            updateHighlight();
-          })
-          .onLinkHover(link => {
+            graph.refresh();
+          }, 50);
+        });
+
+        graph.onLinkHover(link => {
+          clearTimeout(hoverTimeout);
+          hoverTimeout = setTimeout(() => {
             highlightNodes.clear();
             highlightLinks.clear();
 
@@ -101,43 +103,42 @@
               highlightNodes.add(link.target);
             }
 
-            updateHighlight();
-          });
+            graph.refresh();
+          }, 50);
+        });
 
-        graph.d3Force('charge').strength(-30);
-        graph.d3VelocityDecay(0.3);
+        graph.d3Force('charge').strength(-10);
+        graph.d3VelocityDecay(0.5);
 
         setTimeout(() => {
           graph.d3Force('charge', null);
           graph.d3Force('link', null);
-        }, 5000);
+        }, 3000);
       })
-      .catch(err => {
-        console.error('Failed to load graph data:', err);
-      });
+      .catch(err => console.error('Failed to load graph data:', err));
 
     function updateHighlight() {
-      graph.nodeColor(graph.nodeColor())
-        .linkWidth(graph.linkWidth())
-        .linkDirectionalParticles(graph.linkDirectionalParticles());
+      graph.refresh();
     }
 
     function findNode() {
       const query = document.getElementById('search').value.trim();
       if (!graph || !query) return;
-      const node = graph.graphData().nodes.find(n =>
-        n.id.startsWith('RFC\u00a0' + query)
-      );
-      if (node) {
-        console.log(node);
-        graph.cameraPosition(
-          { x: node.x * 1.1, y: node.y * 1.1, z: node.z * 1.1 },
-          node,
-          500
+
+      requestIdleCallback(() => {
+        const node = graph.graphData().nodes.find(n =>
+          n.id.startsWith('RFC ' + query)
         );
-      } else {
-        alert("Node not found.");
-      }
+        if (node) {
+          graph.cameraPosition(
+            { x: node.x, y: node.y, z: node.z + 200 },
+            node,
+            1000
+          );
+        } else {
+          alert("Node not found.");
+        }
+      });
     }
 
     document.getElementById('search').addEventListener('keydown', function(event) {
