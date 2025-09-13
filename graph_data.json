@@ -78537,9 +78537,25 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09820",
+            "title": "Authentication Service Based on the Extensible Authentication Protocol (EAP) for Use with the Constrained Application Protocol (CoAP)",
+            "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09825",
             "title": "Extensions to OSPF for Advertising Prefix Administrative Tags",
             "date": "July 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09826",
+            "title": "A YANG Data Model for the Path Computation Element Communication Protocol (PCEP)",
+            "date": "September 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
@@ -78561,6 +78577,30 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09830",
+            "title": "Advertising Segment Routing Policies in BGP",
+            "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09831",
+            "title": "Segment Type Extensions for BGP Segment Routing (SR) Policy",
+            "date": "September 2025",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09832",
+            "title": "BGP Classful Transport Planes",
+            "date": "September 2025",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09837",
             "title": "The IPv6 VPN Service Destination Option",
             "date": "August 2025",
@@ -78572,6 +78612,14 @@
             "id": "RFC\u00a09839",
             "title": "Unicode Character Repertoire Subsets",
             "date": "August 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09843",
+            "title": "IGP Flexible Algorithms: Bandwidth, Delay, Metrics, and Constraints",
+            "date": "September 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
@@ -92743,6 +92791,10 @@
             "target": "RFC\u00a09685"
         },
         {
+            "source": "RFC\u00a09012",
+            "target": "RFC\u00a09830"
+        },
+        {
             "source": "RFC\u00a09029",
             "target": "RFC\u00a09552"
         },
@@ -92805,6 +92857,10 @@
         {
             "source": "RFC\u00a09298",
             "target": "RFC\u00a09484"
+        },
+        {
+            "source": "RFC\u00a09350",
+            "target": "RFC\u00a09843"
         },
         {
             "source": "RFC\u00a09357",
