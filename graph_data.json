@@ -78545,6 +78545,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09824",
+            "title": "Compact Denial of Existence in DNSSEC",
+            "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09825",
             "title": "Extensions to OSPF for Advertising Prefix Administrative Tags",
             "date": "July 2025",
@@ -78617,6 +78625,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09840",
+            "title": "rLEDBAT: Receiver-Driven Low Extra Delay Background Transport for TCP",
+            "date": "September 2025",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09843",
             "title": "IGP Flexible Algorithms: Bandwidth, Delay, Metrics, and Constraints",
             "date": "September 2025",
@@ -78630,6 +78646,14 @@
             "date": "August 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09879",
+            "title": "Use of Password-Based Message Authentication Code 1 (PBMAC1) in PKCS #12 Syntax",
+            "date": "September 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
             "size": 20
         }
     ],
@@ -87167,6 +87191,10 @@
             "target": "RFC\u00a09077"
         },
         {
+            "source": "RFC\u00a04034",
+            "target": "RFC\u00a09824"
+        },
+        {
             "source": "RFC\u00a04035",
             "target": "RFC\u00a04470"
         },
@@ -87189,6 +87217,10 @@
         {
             "source": "RFC\u00a04035",
             "target": "RFC\u00a09520"
+        },
+        {
+            "source": "RFC\u00a04035",
+            "target": "RFC\u00a09824"
         },
         {
             "source": "RFC\u00a04036",
@@ -91739,6 +91771,10 @@
             "target": "RFC\u00a09579"
         },
         {
+            "source": "RFC\u00a07292",
+            "target": "RFC\u00a09879"
+        },
+        {
             "source": "RFC\u00a07296",
             "target": "RFC\u00a07427"
         },
@@ -92249,6 +92285,10 @@
         {
             "source": "RFC\u00a08018",
             "target": "RFC\u00a09579"
+        },
+        {
+            "source": "RFC\u00a08018",
+            "target": "RFC\u00a09879"
         },
         {
             "source": "RFC\u00a08022",
@@ -92881,6 +92921,10 @@
         {
             "source": "RFC\u00a09504",
             "target": "RFC\u00a09756"
+        },
+        {
+            "source": "RFC\u00a09579",
+            "target": "RFC\u00a09879"
         },
         {
             "source": "RFC\u00a09603",
