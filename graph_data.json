@@ -78649,6 +78649,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09856",
+            "title": "Multicast Source Redundancy in EVPNs",
+            "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09879",
             "title": "Use of Password-Based Message Authentication Code 1 (PBMAC1) in PKCS #12 Syntax",
             "date": "September 2025",
