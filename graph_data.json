@@ -78665,6 +78665,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09874",
+            "title": "Best Practices for Deletion of Domain and Host Objects in the Extensible Provisioning Protocol (EPP)",
+            "date": "September 2025",
+            "status": "Best Current Practice",
+            "color": "#1f77b4",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09879",
             "title": "Use of Password-Based Message Authentication Code 1 (PBMAC1) in PKCS #12 Syntax",
             "date": "September 2025",
