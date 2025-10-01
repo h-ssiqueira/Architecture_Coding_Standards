@@ -78609,6 +78609,38 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09833",
+            "title": "A Common YANG Data Model for Attachment Circuits",
+            "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09834",
+            "title": "YANG Data Models for Bearers and Attachment Circuits as a Service (ACaaS)",
+            "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09835",
+            "title": "A Network YANG Data Model for Attachment Circuits",
+            "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09836",
+            "title": "A YANG Data Model for Augmenting VPN Service and Network Models with Attachment Circuits",
+            "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09837",
             "title": "The IPv6 VPN Service Destination Option",
             "date": "August 2025",
@@ -78630,6 +78662,22 @@
             "date": "September 2025",
             "status": "Experimental",
             "color": "#9467bd",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09841",
+            "title": "Shared Brotli Compressed Data Format",
+            "date": "September 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09842",
+            "title": "Compression Dictionary Transport",
+            "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         },
         {
@@ -92261,6 +92309,10 @@
         {
             "source": "RFC\u00a07900",
             "target": "RFC\u00a08534"
+        },
+        {
+            "source": "RFC\u00a07932",
+            "target": "RFC\u00a09841"
         },
         {
             "source": "RFC\u00a07935",
