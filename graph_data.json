@@ -78713,6 +78713,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09872",
+            "title": "Recommendations for Discovering IPv6 Prefix Used for IPv6 Address Synthesis",
+            "date": "September 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09874",
             "title": "Best Practices for Deletion of Domain and Host Objects in the Extensible Provisioning Protocol (EPP)",
             "date": "September 2025",
