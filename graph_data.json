@@ -78697,6 +78697,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09845",
+            "title": "Challenges and Opportunities in Management for Green Networking",
+            "date": "October 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09856",
             "title": "Multicast Source Redundancy in EVPNs",
             "date": "September 2025",
@@ -78708,6 +78716,38 @@
             "id": "RFC\u00a09859",
             "title": "Generalized DNS Notifications",
             "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09866",
+            "title": "Root Node Failure Detector (RNFD): Fast Detection of Border Router Crashes in the Routing Protocol for Low-Power and Lossy Networks (RPL)",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09868",
+            "title": "Transport Options for UDP",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09869",
+            "title": "Datagram Packetization Layer Path MTU Discovery (DPLPMTUD) for UDP Options",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09870",
+            "title": "Export of UDP Options Information in IP Flow Information Export (IPFIX)",
+            "date": "October 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
@@ -79589,6 +79629,10 @@
         {
             "source": "RFC\u00a0766",
             "target": "RFC\u00a0774"
+        },
+        {
+            "source": "RFC\u00a0768",
+            "target": "RFC\u00a09868"
         },
         {
             "source": "RFC\u00a0770",
