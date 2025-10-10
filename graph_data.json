@@ -78721,6 +78721,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09865",
+            "title": "Cursor-Based Pagination of System of Cross-domain Identity Management (SCIM) Resources",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09866",
             "title": "Root Node Failure Detector (RNFD): Fast Detection of Border Router Crashes in the Routing Protocol for Low-Power and Lossy Networks (RPL)",
             "date": "October 2025",
@@ -92213,6 +92221,14 @@
         {
             "source": "RFC\u00a07641",
             "target": "RFC\u00a08323"
+        },
+        {
+            "source": "RFC\u00a07643",
+            "target": "RFC\u00a09865"
+        },
+        {
+            "source": "RFC\u00a07644",
+            "target": "RFC\u00a09865"
         },
         {
             "source": "RFC\u00a07674",
