@@ -78713,6 +78713,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09858",
+            "title": "Additional Parameter Sets for HSS/LMS Hash-Based Signatures",
+            "date": "October 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09859",
             "title": "Generalized DNS Notifications",
             "date": "September 2025",
@@ -78766,6 +78774,14 @@
             "date": "September 2025",
             "status": "Informational",
             "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09873",
+            "title": "Additional Email Address Extension for the Extensible Provisioning Protocol (EPP)",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         },
         {
