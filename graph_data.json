@@ -78729,6 +78729,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09861",
+            "title": "KangarooTwelve and TurboSHAKE",
+            "date": "October 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09865",
             "title": "Cursor-Based Pagination of System of Cross-domain Identity Management (SCIM) Resources",
             "date": "October 2025",
@@ -78793,11 +78801,27 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09877",
+            "title": "Registration Data Access Protocol (RDAP) Extension for Geofeed Data",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09879",
             "title": "Use of Password-Based Message Authentication Code 1 (PBMAC1) in PKCS #12 Syntax",
             "date": "September 2025",
             "status": "Informational",
             "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09883",
+            "title": "An Attribute for Statement of Possession of a Private Key",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         }
     ],
