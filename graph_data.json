@@ -78481,6 +78481,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09812",
+            "title": "Clarification of IPv6 Address Allocation Policy",
+            "date": "October 2025",
+            "status": "Best Current Practice",
+            "color": "#1f77b4",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09813",
             "title": "Operational Considerations for Using TLS Pre-Shared Keys (TLS-PSKs) with RADIUS",
             "date": "July 2025",
@@ -91893,6 +91901,10 @@
         {
             "source": "RFC\u00a07248",
             "target": "RFC\u00a08048"
+        },
+        {
+            "source": "RFC\u00a07249",
+            "target": "RFC\u00a09812"
         },
         {
             "source": "RFC\u00a07252",
