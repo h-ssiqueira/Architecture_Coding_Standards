@@ -2,17 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="3D visualization of RFC documents and their relationships." />
+  <link rel="preload" href="https://raw.githubusercontent.com/h-ssiqueira/Architecture_Coding_Standards/refs/heads/data/graph_data.json" as="fetch" crossorigin>
+  <link rel="preload" href="https://unpkg.com/3d-force-graph" as="fetch" crossorigin>
+
   <title>RFCs</title>
   <style>
     body { margin: 0; background-color: #101020; }
     canvas { display: block; }
+    .search-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+    }
+
+    #search {
+      padding: 6px;
+      margin-right: 4px;
+    }
+
+    button {
+      padding: 6px;
+    }
   </style>
   <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="32x32">
   <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="192x192">
 </head>
 <body>
-  <input id="search" placeholder="Enter RFC code..." />
-  <button onclick="findNode()">Find</button>
+  <div class="search-container">
+    <input id="search" placeholder="Enter RFC code..." />
+    <button onclick="findNode()">Find</button>
+  </div>
 
   <div id="3d-graph"></div>
 
@@ -27,22 +49,14 @@
       .then(res => res.json())
       .then(raw => {
         const nodeById = {};
-        raw.nodes.forEach(node => {
-          nodeById[node.id] = node;
-        });
+        raw.nodes.forEach(node => { nodeById[node.id] = node; });
 
-        const data = {
-          nodes: raw.nodes,
-          links: raw.edges
-        };
+        const data = { nodes: raw.nodes, links: raw.edges };
 
         data.links.forEach(link => {
           const a = nodeById[link.source];
           const b = nodeById[link.target];
-
-          if (!a || !b) {
-            return;
-          }
+          if (!a || !b) return;
 
           !a.neighbors && (a.neighbors = []);
           !b.neighbors && (b.neighbors = []);
@@ -55,81 +69,69 @@
           b.links.push(link);
         });
 
-        graph = ForceGraph3D()(document.getElementById('3d-graph'))
+        graph = ForceGraph3D({forceEngine: 'ngraph'})(document.getElementById('3d-graph'))
           .graphData(data)
-          .nodeLabel(node => `${node.id} - ${node.title}\nDate: ${node.date}\nStatus: ${node.status}`)
+          .nodeLabel(node => node._label || (`${node.id} - ${node.title}\nDate: ${node.date}\nStatus: ${node.status}`))
           .nodeColor(node => highlightNodes.has(node) ? node === hoverNode ? 'rgb(255,0,0,1)' : 'rgba(255,160,0,0.8)' : (node.color || '#888'))
-          .nodeVal(node => node.size || 5)
-          .nodeResolution(360)
-          .linkDirectionalParticles(1)
-          .linkDirectionalArrowLength(3)
+          .nodeVal(node => Math.min(node.size || 5, 20))
+          .nodeResolution(16)
+          .linkDirectionalArrowLength(link => highlightLinks.has(link) ? 3 : 0)
+          .linkDirectionalParticles(link => highlightLinks.has(link) ? 2 : 0)
           .linkColor(() => '#ccc')
-          .linkResolution(100)
+          .linkResolution(8)
           .backgroundColor('#101020')
           .onNodeClick(node => {
-            window.open(`https://www.rfc-editor.org/rfc/${node.id.match(/RFC\s*\d+/i)[0].replace(/\s+/g, '').toLowerCase()}`, '_blank')
+            window.open(`https://www.rfc-editor.org/rfc/${node.id.match(/RFC\\s*\\d+/i)[0].replace(/\\s+/g, '').toLowerCase()}`, '_blank', 'noopener');
           })
           .linkWidth(link => highlightLinks.has(link) ? 4 : 1)
-          .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
-          .linkDirectionalParticleWidth(4)
-          .onNodeHover(node => {
-            if ((!node && !highlightNodes.size) || (node && hoverNode === node))
-              return;
+          .linkDirectionalParticleWidth(4);
 
-            highlightNodes.clear();
-            highlightLinks.clear();
-            if (node) {
-              highlightNodes.add(node);
-              if (node.neighbors) {
-                node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
-              }
-              if (node.links) {
-                node.links.forEach(l => highlightLinks.add(l));
-              }
-            }
+        graph.onNodeHover(node => {
+          if ((!node && !highlightNodes.size) || (node && hoverNode === node)) return;
 
-            hoverNode = node || null;
-            updateHighlight();
-          })
-          .onLinkHover(link => {
-            highlightNodes.clear();
-            highlightLinks.clear();
+          highlightNodes.clear();
+          highlightLinks.clear();
+          if (node) {
+            highlightNodes.add(node);
+            (node.neighbors || []).forEach(neighbor => highlightNodes.add(neighbor));
+            (node.links || []).forEach(l => highlightLinks.add(l));
+          }
 
-            if (link) {
-              highlightLinks.add(link);
-              highlightNodes.add(link.source);
-              highlightNodes.add(link.target);
-            }
+          hoverNode = node || null;
+          graph.refresh();
+        });
 
-            updateHighlight();
-          });
+        graph.onLinkHover(link => {
+          highlightNodes.clear();
+          highlightLinks.clear();
 
-        graph.d3Force('charge').strength(-30);
-        graph.d3VelocityDecay(0.3);
+          if (link) {
+            highlightLinks.add(link);
+            highlightNodes.add(link.source);
+            highlightNodes.add(link.target);
+          }
+
+          graph.refresh();
+        });
+
+        graph.d3Force('charge').strength(-10);
+        graph.d3VelocityDecay(0.2);
 
         setTimeout(() => {
           graph.d3Force('charge', null);
           graph.d3Force('link', null);
         }, 5000);
       })
-      .catch(err => {
-        console.error('Failed to load graph data:', err);
-      });
-
-    function updateHighlight() {
-      graph.nodeColor(graph.nodeColor())
-        .linkWidth(graph.linkWidth())
-        .linkDirectionalParticles(graph.linkDirectionalParticles());
-    }
+      .catch(err => console.error('Failed to load graph data:', err));
 
     function findNode() {
       const query = document.getElementById('search').value.trim();
       if (!graph || !query) return;
+
       const node = graph.graphData().nodes.find(n =>
         n.id.startsWith('RFC\u00a0' + query)
       );
       if (node) {
-        console.log(node);
         graph.cameraPosition(
           { x: node.x * 1.1, y: node.y * 1.1, z: node.z * 1.1 },
           node,
@@ -143,6 +145,16 @@
     document.getElementById('search').addEventListener('keydown', function(event) {
       if (event.key === 'Enter') {
         findNode();
+      }
+    });
+
+    window.addEventListener('pagehide', () => {
+      if (graph) {
+        try {
+          graph.renderer().dispose();
+        } catch (e) {
+          console.warn("Cleanup failed", e);
+        }
       }
     });
   </script>
