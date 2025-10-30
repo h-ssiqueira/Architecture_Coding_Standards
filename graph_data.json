@@ -78713,9 +78713,33 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09854",
+            "title": "AODV-RPL: The Routing Protocol for Low-Power and Lossy Networks (RPL) Based on Ad Hoc On-Demand Distance Vector (AODV) Routing",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09855",
+            "title": "Topology Independent Fast Reroute Using Segment Routing",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09856",
             "title": "Multicast Source Redundancy in EVPNs",
             "date": "September 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09857",
+            "title": "Advertisement of Segment Routing Policies Using BGP - Link State",
+            "date": "October 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
@@ -78737,11 +78761,35 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09860",
+            "title": "Multicast-Only Fast Reroute (MoFRR) Based on Topology Independent Loop-Free Alternate (TI-LFA) Fast Reroute",
+            "date": "October 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09861",
             "title": "KangarooTwelve and TurboSHAKE",
             "date": "October 2025",
             "status": "Informational",
             "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09862",
+            "title": "Path Computation Element Communication Protocol (PCEP) Extensions for Segment Routing (SR) Policy Candidate Paths",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09863",
+            "title": "Path Computation Element Protocol (PCEP) Extension for Color",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         },
         {
@@ -78825,8 +78873,48 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09881",
+            "title": "Internet X.509 Public Key Infrastructure -- Algorithm Identifiers for the Module-Lattice-Based Digital Signature Algorithm (ML-DSA)",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09882",
+            "title": "Use of the ML-DSA Signature Algorithm in the Cryptographic Message Syntax (CMS)",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09883",
             "title": "An Attribute for Statement of Possession of a Private Key",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09884",
+            "title": "Label Switched Path Ping for Segment Routing Path Segment Identifier with MPLS Data Plane",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09885",
+            "title": "Multi-Part TLVs in IS-IS",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09890",
+            "title": "An Update to YANG Module Names Registration",
             "date": "October 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
@@ -90667,6 +90755,10 @@
             "target": "RFC\u00a09157"
         },
         {
+            "source": "RFC\u00a06020",
+            "target": "RFC\u00a09890"
+        },
+        {
             "source": "RFC\u00a06021",
             "target": "RFC\u00a06991"
         },
@@ -92633,6 +92725,10 @@
         {
             "source": "RFC\u00a08231",
             "target": "RFC\u00a09756"
+        },
+        {
+            "source": "RFC\u00a08231",
+            "target": "RFC\u00a09862"
         },
         {
             "source": "RFC\u00a08233",
