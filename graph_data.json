@@ -78793,6 +78793,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09864",
+            "title": "Fully-Specified Algorithms for JSON Object Signing and Encryption (JOSE) and CBOR Object Signing and Encryption (COSE)",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09865",
             "title": "Cursor-Based Pagination of System of Cross-domain Identity Management (SCIM) Resources",
             "date": "October 2025",
@@ -78854,6 +78862,14 @@
             "date": "September 2025",
             "status": "Best Current Practice",
             "color": "#1f77b4",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09875",
+            "title": "HTTP Cache Groups",
+            "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         },
         {
@@ -92247,6 +92263,10 @@
             "target": "RFC\u00a08996"
         },
         {
+            "source": "RFC\u00a07518",
+            "target": "RFC\u00a09864"
+        },
+        {
             "source": "RFC\u00a07519",
             "target": "RFC\u00a07797"
         },
@@ -92593,6 +92613,10 @@
         {
             "source": "RFC\u00a08029",
             "target": "RFC\u00a09570"
+        },
+        {
+            "source": "RFC\u00a08037",
+            "target": "RFC\u00a09864"
         },
         {
             "source": "RFC\u00a08040",
@@ -93141,6 +93165,10 @@
         {
             "source": "RFC\u00a09052",
             "target": "RFC\u00a09338"
+        },
+        {
+            "source": "RFC\u00a09053",
+            "target": "RFC\u00a09864"
         },
         {
             "source": "RFC\u00a09059",
