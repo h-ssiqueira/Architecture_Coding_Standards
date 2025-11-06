@@ -78577,6 +78577,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09827",
+            "title": "Renaming the Extended Sequence Numbers (ESN) Transform Type in the Internet Key Exchange Protocol Version 2 (IKEv2)",
+            "date": "November 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09828",
             "title": "RTP Payload Format for JPEG 2000 Streaming with Sub-Codestream Latency",
             "date": "August 2025",
@@ -78654,6 +78662,14 @@
             "date": "August 2025",
             "status": "Experimental",
             "color": "#9467bd",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09838",
+            "title": "Group Key Management Using the Internet Key Exchange Protocol Version 2 (IKEv2)",
+            "date": "November 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         },
         {
@@ -78817,6 +78833,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09867",
+            "title": "Mixing Preshared Keys in the IKE_INTERMEDIATE and CREATE_CHILD_SA Exchanges of the Internet Key Exchange Protocol Version 2 (IKEv2) for Post-Quantum Security",
+            "date": "November 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09868",
             "title": "Transport Options for UDP",
             "date": "October 2025",
@@ -78926,6 +78950,14 @@
             "date": "October 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09889",
+            "title": "A Realization of Network Slices for 5G Networks Using Current IP/MPLS Technologies",
+            "date": "November 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
             "size": 20
         },
         {
@@ -91235,6 +91267,10 @@
             "target": "RFC\u00a07274"
         },
         {
+            "source": "RFC\u00a06407",
+            "target": "RFC\u00a09838"
+        },
+        {
             "source": "RFC\u00a06409",
             "target": "RFC\u00a08314"
         },
@@ -92085,6 +92121,10 @@
         {
             "source": "RFC\u00a07296",
             "target": "RFC\u00a09370"
+        },
+        {
+            "source": "RFC\u00a07296",
+            "target": "RFC\u00a09827"
         },
         {
             "source": "RFC\u00a07298",
