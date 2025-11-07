@@ -78897,6 +78897,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09876",
+            "title": "Updates to the IANA Registration Procedures for Constrained Application Protocol (CoAP) Content-Formats",
+            "date": "November 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09877",
             "title": "Registration Data Access Protocol (RDAP) Extension for Geofeed Data",
             "date": "October 2025",
@@ -92065,6 +92073,10 @@
         {
             "source": "RFC\u00a07252",
             "target": "RFC\u00a09175"
+        },
+        {
+            "source": "RFC\u00a07252",
+            "target": "RFC\u00a09876"
         },
         {
             "source": "RFC\u00a07265",
