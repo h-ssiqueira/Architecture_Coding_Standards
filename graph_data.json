@@ -78913,6 +78913,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09878",
+            "title": "Updates to Private Header (P-Header) Extension Usage in Session Initiation Protocol (SIP) Requests and Responses",
+            "date": "November 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09879",
             "title": "Use of Password-Based Message Authentication Code 1 (PBMAC1) in PKCS #12 Syntax",
             "date": "September 2025",
@@ -78972,6 +78980,14 @@
             "id": "RFC\u00a09890",
             "title": "An Update to YANG Module Names Registration",
             "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09901",
+            "title": "Selective Disclosure for JSON Web Tokens",
+            "date": "November 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
@@ -92167,6 +92183,10 @@
             "target": "RFC\u00a07976"
         },
         {
+            "source": "RFC\u00a07315",
+            "target": "RFC\u00a09878"
+        },
+        {
             "source": "RFC\u00a07320",
             "target": "RFC\u00a08820"
         },
@@ -92629,6 +92649,10 @@
         {
             "source": "RFC\u00a07959",
             "target": "RFC\u00a08323"
+        },
+        {
+            "source": "RFC\u00a07976",
+            "target": "RFC\u00a09878"
         },
         {
             "source": "RFC\u00a07983",
