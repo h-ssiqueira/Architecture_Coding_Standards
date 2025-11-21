@@ -78865,6 +78865,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09871",
+            "title": "BGP Color-Aware Routing (CAR)",
+            "date": "November 2025",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09872",
             "title": "Recommendations for Discovering IPv6 Prefix Used for IPv6 Address Synthesis",
             "date": "September 2025",
@@ -78982,6 +78990,22 @@
             "date": "October 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09891",
+            "title": "Automated Certificate Management Environment (ACME) Delay-Tolerant Networking (DTN) Node ID Validation Extension",
+            "date": "November 2025",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09898",
+            "title": "Neighbor Discovery Considerations in IPv6 Deployments",
+            "date": "November 2025",
+            "status": "Informational",
+            "color": "#2ca02c",
             "size": 20
         },
         {
