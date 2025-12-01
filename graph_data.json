@@ -79015,6 +79015,30 @@
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
+        },
+        {
+            "id": "RFC\u00a09904",
+            "title": "DNSSEC Cryptographic Algorithm Recommendation Update Process",
+            "date": "November 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09905",
+            "title": "Deprecating the Use of SHA-1 in DNSSEC Signature Algorithms",
+            "date": "November 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09906",
+            "title": "Deprecate Usage of ECC-GOST within DNSSEC",
+            "date": "November 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
         }
     ],
     "edges": [
@@ -87559,6 +87583,10 @@
             "target": "RFC\u00a09824"
         },
         {
+            "source": "RFC\u00a04034",
+            "target": "RFC\u00a09905"
+        },
+        {
             "source": "RFC\u00a04035",
             "target": "RFC\u00a04470"
         },
@@ -89569,6 +89597,10 @@
         {
             "source": "RFC\u00a05155",
             "target": "RFC\u00a09276"
+        },
+        {
+            "source": "RFC\u00a05155",
+            "target": "RFC\u00a09905"
         },
         {
             "source": "RFC\u00a05156",
@@ -93075,6 +93107,10 @@
             "target": "RFC\u00a09157"
         },
         {
+            "source": "RFC\u00a08624",
+            "target": "RFC\u00a09904"
+        },
+        {
             "source": "RFC\u00a08664",
             "target": "RFC\u00a09756"
         },
@@ -93289,6 +93325,10 @@
         {
             "source": "RFC\u00a09127",
             "target": "RFC\u00a09314"
+        },
+        {
+            "source": "RFC\u00a09157",
+            "target": "RFC\u00a09904"
         },
         {
             "source": "RFC\u00a09168",
