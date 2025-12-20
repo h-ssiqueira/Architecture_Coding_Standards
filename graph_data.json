@@ -79071,6 +79071,14 @@
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
+        },
+        {
+            "id": "RFC\u00a09937",
+            "title": "Proportional Rate Reduction (PRR)",
+            "date": "December 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
         }
     ],
     "edges": [
@@ -91909,6 +91917,10 @@
         {
             "source": "RFC\u00a06931",
             "target": "RFC\u00a09231"
+        },
+        {
+            "source": "RFC\u00a06937",
+            "target": "RFC\u00a09937"
         },
         {
             "source": "RFC\u00a06944",
