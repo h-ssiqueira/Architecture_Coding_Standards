@@ -79017,6 +79017,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09899",
+            "title": "Extensions to the YANG Data Model for Access Control Lists (ACLs)",
+            "date": "December 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09900",
             "title": "Updates to NETCONF Transport Port Numbers",
             "date": "December 2025",
@@ -79068,6 +79076,22 @@
             "id": "RFC\u00a09906",
             "title": "Deprecate Usage of ECC-GOST within DNSSEC",
             "date": "November 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09909",
+            "title": "Internet X.509 Public Key Infrastructure -- Algorithm Identifiers for the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA)",
+            "date": "December 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09911",
+            "title": "Common YANG Data Types",
+            "date": "December 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
@@ -91953,6 +91977,10 @@
         {
             "source": "RFC\u00a06987",
             "target": "RFC\u00a08770"
+        },
+        {
+            "source": "RFC\u00a06991",
+            "target": "RFC\u00a09911"
         },
         {
             "source": "RFC\u00a07001",
