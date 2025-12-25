@@ -78729,6 +78729,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09847",
+            "title": "IANA Registry Updates for TLS and DTLS",
+            "date": "December 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09854",
             "title": "AODV-RPL: The Routing Protocol for Low-Power and Lossy Networks (RPL) Based on Ad Hoc On-Demand Distance Vector (AODV) Routing",
             "date": "October 2025",
@@ -78972,6 +78980,14 @@
             "id": "RFC\u00a09885",
             "title": "Multi-Part TLVs in IS-IS",
             "date": "October 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09886",
+            "title": "DRIP Entity Tags (DETs) in the Domain Name System",
+            "date": "December 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
@@ -93089,6 +93105,10 @@
         {
             "source": "RFC\u00a08445",
             "target": "RFC\u00a08863"
+        },
+        {
+            "source": "RFC\u00a08447",
+            "target": "RFC\u00a09847"
         },
         {
             "source": "RFC\u00a08478",
