@@ -26,6 +26,50 @@
     button {
       padding: 6px;
     }
+
+    .toggle {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 8px;
+      color: #ddd;
+      font-size: 13px;
+    }
+
+    .switch {
+      position: relative;
+      width: 42px;
+      height: 22px;
+      margin-left: 8px;
+    }
+
+    .switch input { display: none; }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #444;
+      border-radius: 22px;
+      transition: .2s;
+    }
+
+    .slider:before {
+      content: "";
+      position: absolute;
+      height: 18px; width: 18px;
+      left: 2px; top: 2px;
+      background: #fff;
+      border-radius: 50%;
+      transition: .2s;
+    }
+
+    input:checked + .slider {
+      background-color: #2a8fbd;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(20px);
+    }
   </style>
   <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="32x32">
   <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="192x192">
@@ -34,6 +78,14 @@
   <div class="search-container">
     <input id="search" placeholder="Enter RFC code..." />
     <button onclick="findNode()">Find</button>
+
+    <label class="toggle" title="Enable node/link hover highlighting">
+      Hover animation
+      <span class="switch">
+        <input id="hover-toggle" type="checkbox" />
+        <span class="slider"></span>
+      </span>
+    </label>
   </div>
 
   <div id="3d-graph"></div>
@@ -45,6 +97,21 @@
     const highlightNodes = new Set();
     const highlightLinks = new Set();
     let hoverNode = null;
+    let hoverEnabled = false;
+    const hoverToggle = document.getElementById && document.getElementById('hover-toggle');
+    if (hoverToggle) {
+      hoverToggle.checked = hoverEnabled;
+      hoverToggle.addEventListener('change', (e) => {
+        hoverEnabled = e.target.checked;
+        if (!hoverEnabled) {
+          highlightNodes.clear();
+          highlightLinks.clear();
+          hoverNode = null;
+          if (graph) graph.refresh();
+        }
+      });
+    }
+
     fetch('https://raw.githubusercontent.com/h-ssiqueira/Architecture_Coding_Standards/refs/heads/data/graph_data.json')
       .then(res => res.json())
       .then(raw => {
@@ -87,6 +154,16 @@
           .linkDirectionalParticleWidth(4);
 
         graph.onNodeHover(node => {
+          if (!hoverEnabled) {
+            if (hoverNode || highlightNodes.size || highlightLinks.size) {
+              highlightNodes.clear();
+              highlightLinks.clear();
+              hoverNode = null;
+              graph.refresh();
+            }
+            return;
+          }
+
           if ((!node && !highlightNodes.size) || (node && hoverNode === node)) return;
 
           highlightNodes.clear();
@@ -102,6 +179,15 @@
         });
 
         graph.onLinkHover(link => {
+          if (!hoverEnabled) {
+            if (highlightNodes.size || highlightLinks.size) {
+              highlightNodes.clear();
+              highlightLinks.clear();
+              graph.refresh();
+            }
+            return;
+          }
+
           highlightNodes.clear();
           highlightLinks.clear();
 
