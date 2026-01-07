@@ -79097,6 +79097,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09908",
+            "title": "Clarification and Enhancement of the CSR Attributes Definition in RFC 7030",
+            "date": "January 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09909",
             "title": "Internet X.509 Public Key Infrastructure -- Algorithm Identifiers for the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA)",
             "date": "December 2025",
@@ -92015,6 +92023,10 @@
             "target": "RFC\u00a08996"
         },
         {
+            "source": "RFC\u00a07030",
+            "target": "RFC\u00a09908"
+        },
+        {
             "source": "RFC\u00a07042",
             "target": "RFC\u00a09542"
         },
@@ -93421,6 +93433,10 @@
         {
             "source": "RFC\u00a09127",
             "target": "RFC\u00a09314"
+        },
+        {
+            "source": "RFC\u00a09148",
+            "target": "RFC\u00a09908"
         },
         {
             "source": "RFC\u00a09157",
