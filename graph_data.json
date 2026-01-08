@@ -79025,6 +79025,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09897",
+            "title": "Datagram Congestion Control Protocol (DCCP) Extensions for Multipath Operation with Multiple Addresses",
+            "date": "January 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09898",
             "title": "Neighbor Discovery Considerations in IPv6 Deployments",
             "date": "November 2025",
@@ -79108,6 +79116,14 @@
             "id": "RFC\u00a09909",
             "title": "Internet X.509 Public Key Infrastructure -- Algorithm Identifiers for the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA)",
             "date": "December 2025",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09910",
+            "title": "Registration Data Access Protocol (RDAP) Regional Internet Registry (RIR) Search",
+            "date": "January 2026",
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
