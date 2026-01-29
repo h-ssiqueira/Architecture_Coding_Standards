@@ -79137,6 +79137,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09917",
+            "title": "IGP Flexible Algorithms Reverse Affinity Constraint",
+            "date": "January 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09937",
             "title": "Proportional Rate Reduction (PRR)",
             "date": "December 2025",
@@ -93491,6 +93499,10 @@
             "target": "RFC\u00a09843"
         },
         {
+            "source": "RFC\u00a09350",
+            "target": "RFC\u00a09917"
+        },
+        {
             "source": "RFC\u00a09357",
             "target": "RFC\u00a09756"
         },
@@ -93521,6 +93533,10 @@
         {
             "source": "RFC\u00a09604",
             "target": "RFC\u00a09756"
+        },
+        {
+            "source": "RFC\u00a09843",
+            "target": "RFC\u00a09917"
         }
     ]
 }
