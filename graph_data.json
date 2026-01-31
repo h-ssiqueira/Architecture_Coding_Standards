@@ -78945,6 +78945,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09880",
+            "title": "Semantic Definition Format (SDF) for Data and Interactions of Things",
+            "date": "January 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09881",
             "title": "Internet X.509 Public Key Infrastructure -- Algorithm Identifiers for the Module-Lattice-Based Digital Signature Algorithm (ML-DSA)",
             "date": "October 2025",
@@ -79022,6 +79030,14 @@
             "date": "November 2025",
             "status": "Experimental",
             "color": "#9467bd",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09896",
+            "title": "SVG in RFCs",
+            "date": "January 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
             "size": 20
         },
         {
@@ -79134,6 +79150,14 @@
             "date": "December 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09915",
+            "title": "Dynamic Host Configuration Protocol for IPv6 (DHCPv6)",
+            "date": "January 2026",
+            "status": "Internet Standard",
+            "color": "#d62728",
             "size": 20
         },
         {
@@ -92843,6 +92867,10 @@
             "target": "RFC\u00a09720"
         },
         {
+            "source": "RFC\u00a07996",
+            "target": "RFC\u00a09896"
+        },
+        {
             "source": "RFC\u00a08008",
             "target": "RFC\u00a09388"
         },
@@ -93125,6 +93153,10 @@
         {
             "source": "RFC\u00a08410",
             "target": "RFC\u00a09295"
+        },
+        {
+            "source": "RFC\u00a08415",
+            "target": "RFC\u00a09915"
         },
         {
             "source": "RFC\u00a08422",
