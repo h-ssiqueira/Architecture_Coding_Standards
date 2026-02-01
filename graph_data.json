@@ -79033,6 +79033,38 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09892",
+            "title": "Dynamic Link Exchange Protocol (DLEP) Traffic Classification Data Item",
+            "date": "January 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09893",
+            "title": "Dynamic Link Exchange Protocol (DLEP) Credit-Based Flow Control Messages and Data Items",
+            "date": "January 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09894",
+            "title": "Dynamic Link Exchange Protocol (DLEP) Diffserv Aware Credit Window Extension",
+            "date": "January 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09895",
+            "title": "Dynamic Link Exchange Protocol (DLEP) IEEE 802.1Q Aware Credit Window Extension",
+            "date": "January 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09896",
             "title": "SVG in RFCs",
             "date": "January 2026",
