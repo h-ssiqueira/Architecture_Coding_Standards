@@ -51940,8 +51940,8 @@
             "id": "RFC\u00a06493",
             "title": "The Resource Public Key Infrastructure (RPKI) Ghostbusters Record",
             "date": "February 2012",
-            "status": "Proposed Standard",
-            "color": "#ffbb78",
+            "status": "Historic",
+            "color": "#7f7f7f",
             "size": 20
         },
         {
@@ -62036,16 +62036,16 @@
             "id": "RFC\u00a07755",
             "title": "SIIT-DC: Stateless IP/ICMP Translation for IPv6 Data Center Environments",
             "date": "February 2016",
-            "status": "Informational",
-            "color": "#2ca02c",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         },
         {
             "id": "RFC\u00a07756",
             "title": "Stateless IP/ICMP Translation for IPv6 Internet Data Center Environments (SIIT-DC): Dual Translation Mode",
             "date": "February 2016",
-            "status": "Informational",
-            "color": "#2ca02c",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         },
         {
