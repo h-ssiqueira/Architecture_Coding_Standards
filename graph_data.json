@@ -79201,6 +79201,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09924",
+            "title": "Advanced Professional Video",
+            "date": "February 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09937",
             "title": "Proportional Rate Reduction (PRR)",
             "date": "December 2025",
