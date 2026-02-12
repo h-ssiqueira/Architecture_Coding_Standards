@@ -79201,11 +79201,35 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09920",
+            "title": "RFC Editor Model (Version 3)",
+            "date": "February 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09924",
             "title": "Advanced Professional Video",
             "date": "February 2026",
             "status": "Informational",
             "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09926",
+            "title": "Prefix Registration for IPv6 Neighbor Discovery",
+            "date": "February 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09927",
+            "title": "Fixing the C-Flag in the Extended Address Registration Option (EARO)",
+            "date": "February 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         },
         {
@@ -89275,6 +89299,10 @@
             "target": "RFC\u00a09762"
         },
         {
+            "source": "RFC\u00a04861",
+            "target": "RFC\u00a09926"
+        },
+        {
             "source": "RFC\u00a04862",
             "target": "RFC\u00a07527"
         },
@@ -91727,6 +91755,10 @@
             "target": "RFC\u00a09685"
         },
         {
+            "source": "RFC\u00a06550",
+            "target": "RFC\u00a09926"
+        },
+        {
             "source": "RFC\u00a06553",
             "target": "RFC\u00a09008"
         },
@@ -92815,6 +92847,10 @@
             "target": "RFC\u00a09280"
         },
         {
+            "source": "RFC\u00a07841",
+            "target": "RFC\u00a09920"
+        },
+        {
             "source": "RFC\u00a07845",
             "target": "RFC\u00a08486"
         },
@@ -92907,8 +92943,36 @@
             "target": "RFC\u00a09720"
         },
         {
+            "source": "RFC\u00a07991",
+            "target": "RFC\u00a09920"
+        },
+        {
+            "source": "RFC\u00a07992",
+            "target": "RFC\u00a09920"
+        },
+        {
+            "source": "RFC\u00a07993",
+            "target": "RFC\u00a09920"
+        },
+        {
+            "source": "RFC\u00a07994",
+            "target": "RFC\u00a09920"
+        },
+        {
+            "source": "RFC\u00a07995",
+            "target": "RFC\u00a09920"
+        },
+        {
+            "source": "RFC\u00a07996",
+            "target": "RFC\u00a09920"
+        },
+        {
             "source": "RFC\u00a07996",
             "target": "RFC\u00a09896"
+        },
+        {
+            "source": "RFC\u00a07997",
+            "target": "RFC\u00a09920"
         },
         {
             "source": "RFC\u00a08008",
@@ -93247,6 +93311,10 @@
             "target": "RFC\u00a09685"
         },
         {
+            "source": "RFC\u00a08505",
+            "target": "RFC\u00a09926"
+        },
+        {
             "source": "RFC\u00a08536",
             "target": "RFC\u00a09636"
         },
@@ -93355,8 +93423,16 @@
             "target": "RFC\u00a09280"
         },
         {
+            "source": "RFC\u00a08729",
+            "target": "RFC\u00a09920"
+        },
+        {
             "source": "RFC\u00a08730",
             "target": "RFC\u00a09280"
+        },
+        {
+            "source": "RFC\u00a08730",
+            "target": "RFC\u00a09920"
         },
         {
             "source": "RFC\u00a08733",
@@ -93447,6 +93523,14 @@
             "target": "RFC\u00a09492"
         },
         {
+            "source": "RFC\u00a08928",
+            "target": "RFC\u00a09926"
+        },
+        {
+            "source": "RFC\u00a08928",
+            "target": "RFC\u00a09927"
+        },
+        {
             "source": "RFC\u00a08934",
             "target": "RFC\u00a09756"
         },
@@ -93485,6 +93569,10 @@
         {
             "source": "RFC\u00a09010",
             "target": "RFC\u00a09685"
+        },
+        {
+            "source": "RFC\u00a09010",
+            "target": "RFC\u00a09926"
         },
         {
             "source": "RFC\u00a09012",
@@ -93563,6 +93651,10 @@
             "target": "RFC\u00a09720"
         },
         {
+            "source": "RFC\u00a09280",
+            "target": "RFC\u00a09920"
+        },
+        {
             "source": "RFC\u00a09298",
             "target": "RFC\u00a09484"
         },
@@ -93605,6 +93697,10 @@
         {
             "source": "RFC\u00a09604",
             "target": "RFC\u00a09756"
+        },
+        {
+            "source": "RFC\u00a09720",
+            "target": "RFC\u00a09920"
         },
         {
             "source": "RFC\u00a09843",
