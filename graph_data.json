@@ -79209,11 +79209,27 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09921",
+            "title": "CBOR Object Signing and Encryption (COSE) Header Parameter for Timestamp Tokens as Defined in RFC 3161",
+            "date": "February 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09924",
             "title": "Advanced Professional Video",
             "date": "February 2026",
             "status": "Informational",
             "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09925",
+            "title": "Unsigned X.509 Certificates",
+            "date": "February 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         },
         {
@@ -90069,6 +90085,10 @@
         {
             "source": "RFC\u00a05280",
             "target": "RFC\u00a09618"
+        },
+        {
+            "source": "RFC\u00a05280",
+            "target": "RFC\u00a09925"
         },
         {
             "source": "RFC\u00a05281",
