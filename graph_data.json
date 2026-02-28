@@ -79217,6 +79217,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09923",
+            "title": "The FNV Non-Cryptographic Hash Algorithm",
+            "date": "February 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09924",
             "title": "Advanced Professional Video",
             "date": "February 2026",
@@ -79249,11 +79257,35 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09929",
+            "title": "IGP Unreachable Prefix Announcement",
+            "date": "February 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09930",
+            "title": "Tunnel Extensible Authentication Protocol (TEAP) Version 1",
+            "date": "February 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09937",
             "title": "Proportional Rate Reduction (PRR)",
             "date": "December 2025",
             "status": "Proposed Standard",
             "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09945",
+            "title": "IETF Community Moderation",
+            "date": "February 2026",
+            "status": "Best Current Practice",
+            "color": "#1f77b4",
             "size": 20
         }
     ],
@@ -84131,6 +84163,10 @@
             "target": "RFC\u00a09141"
         },
         {
+            "source": "RFC\u00a02418",
+            "target": "RFC\u00a09945"
+        },
+        {
             "source": "RFC\u00a02421",
             "target": "RFC\u00a03801"
         },
@@ -87127,6 +87163,10 @@
             "target": "RFC\u00a09245"
         },
         {
+            "source": "RFC\u00a03683",
+            "target": "RFC\u00a09945"
+        },
+        {
             "source": "RFC\u00a03684",
             "target": "RFC\u00a09141"
         },
@@ -87565,6 +87605,10 @@
         {
             "source": "RFC\u00a03932",
             "target": "RFC\u00a05742"
+        },
+        {
+            "source": "RFC\u00a03934",
+            "target": "RFC\u00a09945"
         },
         {
             "source": "RFC\u00a03940",
@@ -92239,6 +92283,10 @@
             "target": "RFC\u00a09427"
         },
         {
+            "source": "RFC\u00a07170",
+            "target": "RFC\u00a09930"
+        },
+        {
             "source": "RFC\u00a07175",
             "target": "RFC\u00a08564"
         },
@@ -93663,6 +93711,10 @@
             "target": "RFC\u00a09430"
         },
         {
+            "source": "RFC\u00a09245",
+            "target": "RFC\u00a09945"
+        },
+        {
             "source": "RFC\u00a09252",
             "target": "RFC\u00a09819"
         },
@@ -93693,6 +93745,10 @@
         {
             "source": "RFC\u00a09363",
             "target": "RFC\u00a09441"
+        },
+        {
+            "source": "RFC\u00a09427",
+            "target": "RFC\u00a09930"
         },
         {
             "source": "RFC\u00a09480",
