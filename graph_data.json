@@ -78737,6 +78737,22 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09848",
+            "title": "Bootstrapping TLS Encrypted ClientHello with DNS Service Bindings",
+            "date": "March 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09849",
+            "title": "TLS Encrypted Client Hello",
+            "date": "March 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09854",
             "title": "AODV-RPL: The Routing Protocol for Low-Power and Lossy Networks (RPL) Based on Ad Hoc On-Demand Distance Vector (AODV) Routing",
             "date": "October 2025",
@@ -79268,6 +79284,14 @@
             "id": "RFC\u00a09930",
             "title": "Tunnel Extensible Authentication Protocol (TEAP) Version 1",
             "date": "February 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09934",
+            "title": "Privacy-Enhanced Mail (PEM) File Format for Encrypted ClientHello (ECH)",
+            "date": "March 2026",
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
