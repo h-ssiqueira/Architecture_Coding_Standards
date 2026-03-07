@@ -79289,8 +79289,32 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09931",
+            "title": "Security Considerations for Optimistic Protocol Transitions in HTTP/1.1",
+            "date": "March 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09934",
             "title": "Privacy-Enhanced Mail (PEM) File Format for Encrypted ClientHello (ECH)",
+            "date": "March 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09935",
+            "title": "Internet X.509 Public Key Infrastructure - Algorithm Identifiers for the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)",
+            "date": "March 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09936",
+            "title": "Use of ML-KEM in the Cryptographic Message Syntax (CMS)",
             "date": "March 2026",
             "status": "Proposed Standard",
             "color": "#ffbb78",
@@ -93715,6 +93739,10 @@
             "target": "RFC\u00a09632"
         },
         {
+            "source": "RFC\u00a09112",
+            "target": "RFC\u00a09931"
+        },
+        {
             "source": "RFC\u00a09127",
             "target": "RFC\u00a09314"
         },
@@ -93761,6 +93789,10 @@
         {
             "source": "RFC\u00a09298",
             "target": "RFC\u00a09484"
+        },
+        {
+            "source": "RFC\u00a09298",
+            "target": "RFC\u00a09931"
         },
         {
             "source": "RFC\u00a09350",
