@@ -80,7 +80,7 @@ HTTP/1.1 | [RFC 2616 - Hypertext Transfer Protocol -- HTTP/1.1](https://datatrac
 HTTP/2 | [RFC 7540 - Hypertext Transfer Protocol Version 2 (HTTP/2)](https://www.rfc-editor.org/info/rfc7540)<br>[RFC 9113 - HTTP/2](https://www.rfc-editor.org/info/rfc9113)
 HTTP/3 | [RFC 9114 - HTTP/3](https://www.rfc-editor.org/info/rfc9114)
 HTTPS | [RFC 2660 - The Secure HyperText Transfer Protocol](https://www.rfc-editor.org/info/rfc2660)
-HTTP Standards | [RFC 9110 - HTTP Semantics](https://datatracker.ietf.org/doc/rfc9110/) [ALT](https://www.rfc-editor.org/rfc/rfc9110.html)<br>[RFC 9111 - HTTP Caching](https://datatracker.ietf.org/doc/rfc9111/)
+HTTP Standards | [RFC 6648 - Deprecating the "X-" Prefix and Similar Constructs in Application Protocols](https://www.rfc-editor.org/rfc/rfc6648.html)<br>[RFC 9110 - HTTP Semantics](https://datatracker.ietf.org/doc/rfc9110/) [ALT](https://www.rfc-editor.org/rfc/rfc9110.html)<br>[RFC 9111 - HTTP Caching](https://datatracker.ietf.org/doc/rfc9111/)
 HTTP Protocols and Security | [RFC 9205 - Building Protocols with HTTP](https://www.rfc-editor.org/rfc/rfc9205.html)
 HTTP State Management | [RFC 2109 - HTTP State Management Mechanism](https://www.rfc-editor.org/rfc/rfc2109.html)<br>[RFC 2965 - HTTP State Management Mechanism](https://www.rfc-editor.org/rfc/rfc2965.html)<br>[RFC 6265 - HTTP State Management Mechanism](https://www.rfc-editor.org/rfc/rfc6265.html)
 HTTP APIs Problem Details | [RFC 7807 - Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/html/rfc7807)<br>[RFC 9457 - Problem Details for HTTP APIs](https://www.rfc-editor.org/rfc/rfc9457.html)
