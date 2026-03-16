@@ -79345,6 +79345,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09938",
+            "title": "A Framework for the Deterministic Networking (DetNet) Controller Plane",
+            "date": "March 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09939",
             "title": "PKCS #8: Private-Key Information Content Types",
             "date": "February 2026",
