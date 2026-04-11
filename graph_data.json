@@ -79329,6 +79329,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09932",
+            "title": "Mutually Authenticating TLS in the Context of Federations",
+            "date": "April 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09934",
             "title": "Privacy-Enhanced Mail (PEM) File Format for Encrypted ClientHello (ECH)",
             "date": "March 2026",
@@ -79379,6 +79387,14 @@
         {
             "id": "RFC\u00a09940",
             "title": "Some Key Terms for Network Fault and Problem Management",
+            "date": "April 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09941",
+            "title": "Secure Shell (SSH) Key Exchange Method Using Hybrid Streamlined NTRU Prime sntrup761 and X25519 with SHA-512: sntrup761x25519-sha512",
             "date": "April 2026",
             "status": "Informational",
             "color": "#2ca02c",
