@@ -79217,6 +79217,30 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09912",
+            "title": "Reliable and Available Wireless (RAW) Architecture",
+            "date": "April 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09913",
+            "title": "Reliable and Available Wireless (RAW) Technologies",
+            "date": "April 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09914",
+            "title": "Root-Initiated Routing State in the Routing Protocol for Low-Power and Lossy Networks (RPL)",
+            "date": "April 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09915",
             "title": "Dynamic Host Configuration Protocol for IPv6 (DHCPv6)",
             "date": "January 2026",
@@ -91991,12 +92015,20 @@
             "target": "RFC\u00a09926"
         },
         {
+            "source": "RFC\u00a06550",
+            "target": "RFC\u00a09914"
+        },
+        {
             "source": "RFC\u00a06553",
             "target": "RFC\u00a09008"
         },
         {
             "source": "RFC\u00a06553",
             "target": "RFC\u00a09685"
+        },
+        {
+            "source": "RFC\u00a06553",
+            "target": "RFC\u00a09914"
         },
         {
             "source": "RFC\u00a06555",
@@ -93301,6 +93333,10 @@
         {
             "source": "RFC\u00a08138",
             "target": "RFC\u00a09035"
+        },
+        {
+            "source": "RFC\u00a08138",
+            "target": "RFC\u00a09914"
         },
         {
             "source": "RFC\u00a08145",
