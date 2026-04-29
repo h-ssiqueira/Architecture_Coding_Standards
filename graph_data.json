@@ -79503,6 +79503,14 @@
             "status": "Proposed Standard",
             "color": "#ffbb78",
             "size": 20
+        },
+        {
+            "id": "RFC\u00a09963",
+            "title": "Legacy RSASSA-PKCS1-v1_5 Code Points for TLS 1.3",
+            "date": "April 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
         }
     ],
     "edges": [
