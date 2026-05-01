@@ -79505,6 +79505,22 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09960",
+            "title": "Segment Routing Point-to-Multipoint Policy",
+            "date": "April 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09961",
+            "title": "MPLS Segment Routing Point-to-Multipoint (P2MP) Policy Ping",
+            "date": "April 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09963",
             "title": "Legacy RSASSA-PKCS1-v1_5 Code Points for TLS 1.3",
             "date": "April 2026",
@@ -94029,6 +94045,10 @@
         {
             "source": "RFC\u00a09504",
             "target": "RFC\u00a09756"
+        },
+        {
+            "source": "RFC\u00a09524",
+            "target": "RFC\u00a09960"
         },
         {
             "source": "RFC\u00a09579",
