@@ -79505,6 +79505,30 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09956",
+            "title": "A Non-Queue-Building Per-Hop Behavior (NQB PHB) for Differentiated Services",
+            "date": "May 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09957",
+            "title": "The DOCSIS Queue Protection Algorithm to Preserve Low Latency",
+            "date": "May 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09959",
+            "title": "Careful Resume: Convergence of Congestion Control from Retained State",
+            "date": "May 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09960",
             "title": "Segment Routing Point-to-Multipoint Policy",
             "date": "April 2026",
@@ -79526,6 +79550,14 @@
             "date": "April 2026",
             "status": "Proposed Standard",
             "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09968",
+            "title": "Report from the IAB Workshop on the Next Era of Network Management Operations (NEMOPS)",
+            "date": "May 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
             "size": 20
         }
     ],
@@ -93537,6 +93569,10 @@
         {
             "source": "RFC\u00a08325",
             "target": "RFC\u00a08622"
+        },
+        {
+            "source": "RFC\u00a08325",
+            "target": "RFC\u00a09956"
         },
         {
             "source": "RFC\u00a08340",
