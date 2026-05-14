@@ -79433,6 +79433,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09944",
+            "title": "Device Schema Extensions to the System for Cross-Domain Identity Management (SCIM) Model",
+            "date": "May 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09945",
             "title": "IETF Community Moderation",
             "date": "February 2026",
@@ -79542,6 +79550,14 @@
             "date": "April 2026",
             "status": "Proposed Standard",
             "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09962",
+            "title": "A Decentralized Locator/ID Separation Protocol Mapping System (LISP-Decent)",
+            "date": "May 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
             "size": 20
         },
         {
