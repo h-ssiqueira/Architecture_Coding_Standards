@@ -79569,6 +79569,14 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09967",
+            "title": "System for Cross-Domain Identity Management (SCIM) Profile for Security Event Tokens (SETs)",
+            "date": "May 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09968",
             "title": "Report from the IAB Workshop on the Next Era of Network Management Operations (NEMOPS)",
             "date": "May 2026",
@@ -93107,8 +93115,16 @@
             "target": "RFC\u00a09865"
         },
         {
+            "source": "RFC\u00a07643",
+            "target": "RFC\u00a09967"
+        },
+        {
             "source": "RFC\u00a07644",
             "target": "RFC\u00a09865"
+        },
+        {
+            "source": "RFC\u00a07644",
+            "target": "RFC\u00a09967"
         },
         {
             "source": "RFC\u00a07674",
