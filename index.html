@@ -545,9 +545,8 @@
         <span class="sb-val" id="sb-links">—</span>
       </div>
       <div class="sb-divider"></div>
-      <a class="sb-visit" id="sb-visit" href="#" target="_blank" rel="noopener">
-        ↗ Open on rfc-editor.org
-      </a>
+      <span class="sb-visit" id="sb-visit" onclick="focusNode(document.getElementById('sidebar').node)">Focus</span>
+      <a class="sb-visit" id="sb-visit" href="#" target="_blank" rel="noopener">↗ Open on rfc-editor.org</a>
     </div>
   </div>
 
@@ -616,6 +615,14 @@
       return '#888';
     }
 
+    function focusNode(node) {
+      graph.cameraPosition(
+        { x: node.x * 1.1, y: node.y * 1.1, z: node.z * 1.1 },
+        node,
+        500
+      );
+    }
+
     function openSidebar(node) {
       const num = extractRfcNum(node.id);
       document.getElementById('sb-id').textContent = num ? `RFC ${num}` : node.id;
@@ -631,7 +638,7 @@
 
       const count = (node.links || []).length;
       document.getElementById('sb-links').textContent =
-        count ? `${count} connection${count !== 1 ? 's' : ''}` : 'none';
+        count ? `${count} connection${count !== 1 ? 's' : ''}` : 'None';
 
       const url = num ? `https://www.rfc-editor.org/rfc/rfc${num}` : '#';
       document.getElementById('sb-visit').href = url;
@@ -640,6 +647,7 @@
       sidebar.style.transform = '';
       sidebar.style.transition = '';
       sidebar.classList.add('open');
+      sidebar.node = node;
 
       if (isMobile()) {
         document.getElementById('legend').classList.add('sidebar-open');
@@ -667,11 +675,7 @@
       const node = graph.graphData().nodes.find(n => extractRfcNum(n.id) === num);
 
       if (node) {
-        graph.cameraPosition(
-          { x: node.x * 1.1, y: node.y * 1.1, z: node.z * 1.1 },
-          node,
-          500
-        );
+        focusNode(node);
         openSidebar(node);
       } else {
         showToast(`RFC ${num} not found.`);
