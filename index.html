@@ -2,73 +2,171 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="3D visualization of RFC documents and their relationships." />
   <link rel="preload" href="https://raw.githubusercontent.com/h-ssiqueira/Architecture_Coding_Standards/refs/heads/data/graph_data.json" as="fetch" crossorigin>
   <link rel="preload" href="https://unpkg.com/3d-force-graph" as="fetch" crossorigin>
 
   <title>RFCs</title>
   <style>
-    body { margin: 0; background-color: #101020; }
-    canvas { display: block; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #101020;
+      overflow: hidden;
+    }
+
+    #3d-graph {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    canvas {
+      display: block;
+    }
+
     .search-container {
-      position: absolute;
-      top: 10px;
-      left: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 10;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 10px 12px;
+      padding-top: max(10px, env(safe-area-inset-top));
+      padding-left: max(12px, env(safe-area-inset-left));
+      padding-right: max(12px, env(safe-area-inset-right));
+      background: rgba(16, 16, 32, 0.88);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.07);
     }
 
     #search {
-      padding: 6px;
-      margin-right: 4px;
+      flex: 1;
+      min-width: 120px;
+      padding: 7px 10px;
+      font-size: 16px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 7px;
+      color: #ddd;
+      outline: none;
+      transition: border-color .15s;
+    }
+
+    #search:focus {
+      border-color: rgba(42,143,189,.55);
+    }
+
+    #search::placeholder {
+      color: #555;
     }
 
     button {
-      padding: 6px;
+      padding: 7px 14px;
+      font-size: 13px;
+      background: rgba(42,143,189,.2);
+      border: 1px solid rgba(42,143,189,.4);
+      border-radius: 7px;
+      color: #7bbfe0;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background .15s;
+    }
+
+    button:hover {
+      background: rgba(42,143,189,.35);
+    }
+    
+    button:active {
+      background: rgba(42,143,189,.5);
     }
 
     .toggle {
       display: inline-flex;
       align-items: center;
-      margin-left: 8px;
-      color: #ddd;
-      font-size: 13px;
+      color: #aaa;
+      font-size: 12px;
+      font-family: sans-serif;
+      white-space: nowrap;
+      gap: 6px;
     }
 
     .switch {
       position: relative;
-      width: 42px;
-      height: 22px;
-      margin-left: 8px;
+      width: 38px;
+      height: 20px;
+      flex-shrink: 0;
     }
 
-    .switch input { display: none; }
+    .switch input {
+      display: none;
+    }
 
     .slider {
       position: absolute;
       cursor: pointer;
-      top: 0; left: 0; right: 0; bottom: 0;
+      inset: 0;
       background-color: #444;
-      border-radius: 22px;
-      transition: .2s;
+      border-radius: 20px;
+      transition: background .2s;
     }
 
     .slider:before {
       content: "";
       position: absolute;
-      height: 18px; width: 18px;
-      left: 2px; top: 2px;
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      top: 2px;
       background: #fff;
       border-radius: 50%;
-      transition: .2s;
+      transition: transform .2s;
     }
 
     input:checked + .slider {
       background-color: #2a8fbd;
     }
-
+    
     input:checked + .slider:before {
-      transform: translateX(20px);
+      transform: translateX(18px);
+    }
+
+    #toast {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      z-index: 100;
+      background: rgba(30,30,50,.96);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 9px;
+      color: #ddd;
+      font-family: sans-serif;
+      font-size: 13px;
+      padding: 10px 18px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s, transform .2s;
+      backdrop-filter: blur(8px);
+    }
+
+    #toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
     }
 
     #loading-overlay {
@@ -83,12 +181,12 @@
       gap: 14px;
       transition: opacity .4s ease;
     }
-    
+
     #loading-overlay.fade-out {
       opacity: 0;
       pointer-events: none;
     }
-    
+
     .spinner {
       width: 40px; height: 40px;
       border: 2px solid rgba(255,255,255,.1);
@@ -96,22 +194,26 @@
       border-radius: 50%;
       animation: spin .85s linear infinite;
     }
-    
+
     @keyframes spin {
       to {
         transform: rotate(360deg);
       }
     }
+
     .loading-text {
       color: #888;
       font-size: 13px;
       font-family: sans-serif;
     }
+
     .loading-error {
       color: #e07070;
       font-size: 12px;
       font-family: sans-serif;
       display: none;
+      text-align: center;
+      padding: 0 20px;
     }
 
     #sidebar {
@@ -119,18 +221,20 @@
       top: 10px;
       right: 10px;
       z-index: 20;
-      width: 250px;
-      background: rgba(18, 18, 36, 0.92);
+      width: 260px;
+      background: rgba(18, 18, 36, 0.95);
       border: 1px solid rgba(255,255,255,.12);
       border-radius: 10px;
       backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       font-family: sans-serif;
       font-size: 13px;
       color: #ddd;
       overflow: hidden;
-      transform: translateX(270px);
+      transform: translateX(290px);
       opacity: 0;
       transition: transform .25s ease, opacity .2s ease;
+      will-change: transform;
     }
 
     #sidebar.open {
@@ -162,13 +266,14 @@
     }
 
     .sb-close {
-      font-size: 18px;
-      color: #666;
+      font-size: 20px;
+      color: #555;
       cursor: pointer;
       line-height: 1;
       padding: 0 2px;
       flex-shrink: 0;
       margin-left: 8px;
+      user-select: none;
     }
 
     .sb-close:hover {
@@ -208,20 +313,20 @@
       border-radius: 10px;
       letter-spacing: .04em;
     }
-    
+
     .sb-divider {
       height: 1px;
       background: rgba(255,255,255,.07);
       margin: 2px 0;
     }
-    
+
     .sb-visit {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 5px;
       margin-top: 2px;
-      padding: 7px;
+      padding: 8px;
       background: rgba(42,143,189,.15);
       border: 1px solid rgba(42,143,189,.35);
       border-radius: 7px;
@@ -231,6 +336,7 @@
       text-decoration: none;
       transition: background .15s, color .15s;
       font-family: sans-serif;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .sb-visit:hover {
@@ -251,6 +357,7 @@
       font-size: 11px;
       color: #999;
       backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       transition: opacity .2s, transform .2s;
     }
 
@@ -259,7 +366,7 @@
       pointer-events: none;
       transform: translateY(6px);
     }
-    
+
     .leg-heading {
       font-size: 10px;
       font-weight: 600;
@@ -268,7 +375,7 @@
       color: #555;
       margin-bottom: 6px;
     }
-    
+
     .leg-row {
       display: flex;
       align-items: center;
@@ -276,13 +383,13 @@
       margin: 3px 0;
       color: #888;
     }
-    
+
     .leg-dot {
       width: 8px; height: 8px;
       border-radius: 50%;
       flex-shrink: 0;
     }
-    
+
     .leg-section {
       font-size: 9px;
       text-transform: uppercase;
@@ -290,9 +397,102 @@
       color: #444;
       margin: 7px 0 3px;
     }
+
+    @media (max-width: 600px) {
+
+      #sidebar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 14px 14px 0 0;
+        border: none;
+        border-top: 1px solid rgba(255,255,255,.12);
+        transform: translateY(100%);
+        opacity: 1;
+        max-height: 65vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: max(16px, env(safe-area-inset-bottom));
+      }
+
+      #sidebar.open {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      #sidebar::before {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 4px;
+        background: rgba(255,255,255,.18);
+        border-radius: 2px;
+        margin: 10px auto 4px;
+      }
+
+      .sb-header {
+        padding: 10px 16px 10px;
+      }
+      
+      .sb-title  {
+        font-size: 13px;
+      }
+      
+      .sb-rfc-id {
+        font-size: 11px;
+      }
+
+      #legend {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        border: none;
+        border-top: 1px solid rgba(255,255,255,.07);
+        padding: 7px 14px;
+        padding-bottom: max(7px, env(safe-area-inset-bottom));
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px 12px;
+        align-items: center;
+      }
+
+      #legend.hidden {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+
+      #legend.sidebar-open {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(100%);
+      }
+
+      .leg-heading {
+        flex-basis: 100%;
+        margin-bottom: 2px;
+        font-size: 9px;
+      }
+
+      .leg-section {
+        flex-basis: 100%;
+        margin: 3px 0 1px;
+      }
+
+      .leg-row { font-size: 10px; }
+
+      #toast { bottom: 56px; }
+    }
+
+    @media (max-width: 380px) {
+      .toggle  { font-size: 11px; }
+      .switch  { width: 34px; height: 18px; }
+      .slider:before { height: 14px; width: 14px; }
+    }
   </style>
   <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="32x32">
-  <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="192x192">
 </head>
 <body>
 
@@ -303,18 +503,18 @@
   </div>
 
   <div class="search-container">
-    <input id="search" placeholder="Enter RFC code..." />
+    <input id="search" placeholder="Enter RFC number…" inputmode="numeric" />
     <button onclick="findNode()">Find</button>
 
     <label class="toggle" title="Enable node/link hover highlighting">
-      Hover animation
+      Hover
       <span class="switch">
         <input id="hover-toggle" type="checkbox" />
         <span class="slider"></span>
       </span>
     </label>
 
-    <label class="toggle" title="Show/hide legend" style="margin-left:12px">
+    <label class="toggle" title="Show/hide legend" style="margin-left:4px">
       Legend
       <span class="switch">
         <input id="legend-toggle" type="checkbox" checked />
@@ -362,19 +562,29 @@
     <div class="leg-row"><div class="leg-dot" style="background:#888"></div>Other / Unknown</div>
   </div>
 
+  <div id="toast"></div>
+
   <div id="3d-graph"></div>
 
   <script src="https://unpkg.com/3d-force-graph"></script>
-
   <script>
+    let toastTimer;
+    function showToast(msg, duration = 2800) {
+      const el = document.getElementById('toast');
+      el.textContent = msg;
+      el.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove('show'), duration);
+    }
+
     let graph;
     const highlightNodes = new Set();
     const highlightLinks = new Set();
     let hoverNode = null;
     let hoverEnabled = false;
+    const isMobile = () => window.innerWidth <= 600;
 
-    const hoverToggle = document.getElementById('hover-toggle');
-    hoverToggle.addEventListener('change', e => {
+    document.getElementById('hover-toggle').addEventListener('change', e => {
       hoverEnabled = e.target.checked;
       if (!hoverEnabled) {
         highlightNodes.clear();
@@ -392,26 +602,6 @@
       if (!id) return null;
       const m = id.match(/RFC[\s\u00a0]*(\d+)/i);
       return m ? m[1] : null;
-    }
-
-    function findNode() {
-      const raw = document.getElementById('search').value.trim();
-      if (!graph || !raw) return;
-
-      const num = raw.replace(/RFC[\s\u00a0]*/i, '').trim();
-      if (!num) { alert('Enter a numeric RFC number.'); return; }
-
-      const node = graph.graphData().nodes.find(n => extractRfcNum(n.id) === num);
-
-      if (node) {
-        graph.cameraPosition(
-          { x: node.x * 1.1, y: node.y * 1.1, z: node.z * 1.1 },
-          node,
-          500
-        );
-      } else {
-        alert(`RFC ${num} not found.`);
-      }
     }
 
     function statusColor(status) {
@@ -434,26 +624,59 @@
 
       const statusEl = document.getElementById('sb-status');
       statusEl.textContent = node.status || '—';
-      statusEl.style.background = statusColor(node.status) + '22';
-      statusEl.style.color = statusColor(node.status);
-      statusEl.style.border = '1px solid ' + statusColor(node.status) + '55';
+      const sc = statusColor(node.status);
+      statusEl.style.background = sc + '22';
+      statusEl.style.color = sc;
+      statusEl.style.border = '1px solid ' + sc + '55';
 
       const count = (node.links || []).length;
-      document.getElementById('sb-links').textContent = count ? `${count} connection${count !== 1 ? 's' : ''}` : 'none';
+      document.getElementById('sb-links').textContent =
+        count ? `${count} connection${count !== 1 ? 's' : ''}` : 'none';
 
       const url = num ? `https://www.rfc-editor.org/rfc/rfc${num}` : '#';
       document.getElementById('sb-visit').href = url;
 
-      document.getElementById('sidebar').classList.add('open');
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.transform = '';
+      sidebar.style.transition = '';
+      sidebar.classList.add('open');
+
+      if (isMobile()) {
+        document.getElementById('legend').classList.add('sidebar-open');
+      }
     }
 
     function closeSidebar() {
-      document.getElementById('sidebar').classList.remove('open');
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.transform = '';
+      sidebar.classList.remove('open');
+      document.getElementById('legend').classList.remove('sidebar-open');
     }
 
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') closeSidebar();
     });
+
+    function findNode() {
+      const raw = document.getElementById('search').value.trim();
+      if (!graph || !raw) return;
+
+      const num = raw.replace(/RFC[\s\u00a0]*/i, '').trim();
+      if (!num || isNaN(num)) { showToast('Enter a numeric RFC number.'); return; }
+
+      const node = graph.graphData().nodes.find(n => extractRfcNum(n.id) === num);
+
+      if (node) {
+        graph.cameraPosition(
+          { x: node.x * 1.1, y: node.y * 1.1, z: node.z * 1.1 },
+          node,
+          500
+        );
+        openSidebar(node);
+      } else {
+        showToast(`RFC ${num} not found.`);
+      }
+    }
 
     fetch('https://raw.githubusercontent.com/h-ssiqueira/Architecture_Coding_Standards/refs/heads/data/graph_data.json')
       .then(res => {
@@ -470,12 +693,10 @@
           const a = nodeById[link.source];
           const b = nodeById[link.target];
           if (!a || !b) return;
-
           !a.neighbors && (a.neighbors = []);
           !b.neighbors && (b.neighbors = []);
           a.neighbors.push(b);
           b.neighbors.push(a);
-
           !a.links && (a.links = []);
           !b.links && (b.links = []);
           a.links.push(link);
@@ -484,8 +705,12 @@
 
         graph = ForceGraph3D({ forceEngine: 'ngraph' })(document.getElementById('3d-graph'))
           .graphData(data)
-          .nodeLabel(node => node._label || (`${node.id} - ${node.title}\nDate: ${node.date}\nStatus: ${node.status}`))
-          .nodeColor(node => highlightNodes.has(node) ? node === hoverNode ? 'rgb(255,0,0,1)' : 'rgba(255,160,0,0.8)' : (node.color || statusColor(node.status)))
+          .nodeLabel(node => `${node.id} - ${node.title}\nDate: ${node.date}\nStatus: ${node.status}`)
+          .nodeColor(node =>
+            highlightNodes.has(node)
+              ? node === hoverNode ? 'rgb(255,0,0,1)' : 'rgba(255,160,0,0.8)'
+              : (node.color || statusColor(node.status))
+          )
           .nodeVal(node => Math.min(node.size || 5, 20))
           .nodeResolution(16)
           .linkDirectionalArrowLength(link => highlightLinks.has(link) ? 3 : 0)
@@ -507,17 +732,14 @@
             }
             return;
           }
-
           if ((!node && !highlightNodes.size) || (node && hoverNode === node)) return;
-
           highlightNodes.clear();
           highlightLinks.clear();
           if (node) {
             highlightNodes.add(node);
-            (node.neighbors || []).forEach(neighbor => highlightNodes.add(neighbor));
+            (node.neighbors || []).forEach(n => highlightNodes.add(n));
             (node.links || []).forEach(l => highlightLinks.add(l));
           }
-
           hoverNode = node || null;
           graph.refresh();
         });
@@ -531,16 +753,13 @@
             }
             return;
           }
-
           highlightNodes.clear();
           highlightLinks.clear();
-
           if (link) {
             highlightLinks.add(link);
             highlightNodes.add(link.source);
             highlightNodes.add(link.target);
           }
-
           graph.refresh();
         });
 
@@ -560,26 +779,61 @@
         console.error('Failed to load graph data:', err);
         document.getElementById('spinner').style.display = 'none';
         const errEl = document.getElementById('loading-error');
-        errEl.textContent = 'Failed to load graph data: ' + (err.message || 'unknown error');
+        errEl.textContent = 'Failed to load: ' + (err.message || 'unknown error');
         errEl.style.display = 'block';
-        document.querySelector('.loading-text').textContent = 'Something went wrong';
+        document.querySelector('.loading-text').textContent = 'Something went wrong.';
       });
 
-    document.getElementById('search').addEventListener('keydown', function(event) {
-      if (event.key === 'Enter') {
-        findNode();
-      }
+    document.getElementById('search').addEventListener('keydown', e => {
+      if (e.key === 'Enter') findNode();
+    });
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (graph) graph.width(window.innerWidth).height(window.innerHeight);
+      }, 200);
     });
 
     window.addEventListener('pagehide', () => {
       if (graph) {
-        try {
-          graph.renderer().dispose();
-        } catch (e) {
-          console.warn("Cleanup failed", e);
-        }
+        try { graph.renderer().dispose(); } catch (e) { console.warn('Cleanup failed', e); }
       }
     });
+
+    (function () {
+      const sidebar = document.getElementById('sidebar');
+      let startY = 0;
+      let isDragging = false;
+
+      sidebar.addEventListener('touchstart', e => {
+        startY = e.touches[0].clientY;
+        isDragging = true;
+      }, { passive: true });
+
+      sidebar.addEventListener('touchmove', e => {
+        if (!isDragging) return;
+        const dy = e.touches[0].clientY - startY;
+        if (dy > 0) {
+          sidebar.style.transition = 'none';
+          sidebar.style.transform = `translateY(${dy}px)`;
+        }
+      }, { passive: true });
+
+      sidebar.addEventListener('touchend', e => {
+        if (!isDragging) return;
+        isDragging = false;
+        const dy = e.changedTouches[0].clientY - startY;
+        sidebar.style.transition = '';
+        if (dy > 80) {
+          sidebar.style.transform = '';
+          closeSidebar();
+        } else {
+          sidebar.style.transform = '';
+        }
+      }, { passive: true });
+    })();
   </script>
 </body>
 </html>
