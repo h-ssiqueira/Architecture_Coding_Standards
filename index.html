@@ -546,7 +546,7 @@
       </div>
       <div class="sb-divider"></div>
       <span class="sb-visit" id="sb-visit" onclick="focusNode(document.getElementById('sidebar').node)">Focus</span>
-      <a class="sb-visit" id="sb-visit" href="#" target="_blank" rel="noopener">↗ Open on rfc-editor.org</a>
+      <a class="sb-visit" id="sb-open-link" href="#" target="_blank" rel="noopener noreferrer">↗ Open on rfc-editor.org</a>
     </div>
   </div>
 
@@ -640,8 +640,7 @@
       document.getElementById('sb-links').textContent =
         count ? `${count} connection${count !== 1 ? 's' : ''}` : 'None';
 
-      const url = num ? `https://www.rfc-editor.org/rfc/rfc${num}` : '#';
-      document.getElementById('sb-visit').href = url;
+      document.getElementById('sb-open-link').href = num ? `https://www.rfc-editor.org/rfc/rfc${num}.html` : '#';
 
       const sidebar = document.getElementById('sidebar');
       sidebar.style.transform = '';
