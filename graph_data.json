@@ -79569,6 +79569,22 @@
             "size": 20
         },
         {
+            "id": "RFC\u00a09964",
+            "title": "ML-DSA for JSON Object Signing and Encryption (JOSE) and CBOR Object Signing and Encryption (COSE)",
+            "date": "May 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09965",
+            "title": "The eap.arpa. Domain and Extensible Authentication Protocol (EAP) Provisioning",
+            "date": "May 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC\u00a09967",
             "title": "System for Cross-Domain Identity Management (SCIM) Profile for Security Event Tokens (SETs)",
             "date": "May 2026",
@@ -79582,6 +79598,30 @@
             "date": "May 2026",
             "status": "Informational",
             "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09969",
+            "title": "Report from the IAB Workshop on AI-CONTROL",
+            "date": "May 2026",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09972",
+            "title": "Advanced BGP Monitoring Protocol (BMP) Statistics Types",
+            "date": "May 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC\u00a09983",
+            "title": "OSPFv2 Anycast Property Advertisement",
+            "date": "May 2026",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
             "size": 20
         }
     ],
@@ -90251,6 +90291,10 @@
             "target": "RFC\u00a09190"
         },
         {
+            "source": "RFC\u00a05216",
+            "target": "RFC\u00a09965"
+        },
+        {
             "source": "RFC\u00a05222",
             "target": "RFC\u00a06848"
         },
@@ -94027,6 +94071,10 @@
             "target": "RFC\u00a09314"
         },
         {
+            "source": "RFC\u00a09140",
+            "target": "RFC\u00a09965"
+        },
+        {
             "source": "RFC\u00a09146",
             "target": "RFC\u00a09853"
         },
@@ -94053,6 +94101,10 @@
         {
             "source": "RFC\u00a09171",
             "target": "RFC\u00a09758"
+        },
+        {
+            "source": "RFC\u00a09190",
+            "target": "RFC\u00a09965"
         },
         {
             "source": "RFC\u00a09202",
