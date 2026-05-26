@@ -218,10 +218,10 @@
 
     #sidebar {
       position: fixed;
-      top: 10px;
+      top: 56px;
       right: 10px;
       z-index: 20;
-      width: 260px;
+      width: 270px;
       background: rgba(18, 18, 36, 0.95);
       border: 1px solid rgba(255,255,255,.12);
       border-radius: 10px;
@@ -231,7 +231,7 @@
       font-size: 13px;
       color: #ddd;
       overflow: hidden;
-      transform: translateX(290px);
+      transform: translateX(300px);
       opacity: 0;
       transition: transform .25s ease, opacity .2s ease;
       will-change: transform;
@@ -346,56 +346,59 @@
 
     #legend {
       position: fixed;
-      bottom: 14px;
-      left: 14px;
+      bottom: 18px;
+      left: 18px;
       z-index: 20;
-      background: rgba(18, 18, 36, 0.88);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 9px;
-      padding: 10px 13px;
+      background: rgba(18, 18, 36, 0.92);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 11px;
+      padding: 14px 18px;
       font-family: sans-serif;
-      font-size: 11px;
-      color: #999;
+      font-size: 13px;
+      color: #aaa;
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      transition: opacity .2s, transform .2s;
+      transition: opacity .25s, transform .25s;
+      min-width: 190px;
     }
 
     #legend.hidden {
       opacity: 0;
       pointer-events: none;
-      transform: translateY(6px);
+      transform: translateY(10px);
     }
 
     .leg-heading {
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: .07em;
-      color: #555;
-      margin-bottom: 6px;
+      color: #666;
+      margin-bottom: 10px;
     }
 
     .leg-row {
       display: flex;
       align-items: center;
-      gap: 7px;
-      margin: 3px 0;
-      color: #888;
+      gap: 10px;
+      margin: 5px 0;
+      color: #aaa;
+      font-size: 13px;
     }
 
     .leg-dot {
-      width: 8px; height: 8px;
+      width: 11px;
+      height: 11px;
       border-radius: 50%;
       flex-shrink: 0;
     }
 
     .leg-section {
-      font-size: 9px;
+      font-size: 10px;
       text-transform: uppercase;
       letter-spacing: .07em;
-      color: #444;
-      margin: 7px 0 3px;
+      color: #555;
+      margin: 10px 0 5px;
     }
 
     @media (max-width: 600px) {
@@ -451,12 +454,13 @@
         border-radius: 0;
         border: none;
         border-top: 1px solid rgba(255,255,255,.07);
-        padding: 7px 14px;
-        padding-bottom: max(7px, env(safe-area-inset-bottom));
+        padding: 10px 16px;
+        padding-bottom: max(10px, env(safe-area-inset-bottom));
         display: flex;
         flex-wrap: wrap;
-        gap: 2px 12px;
+        gap: 2px 14px;
         align-items: center;
+        min-width: unset;
       }
 
       #legend.hidden {
@@ -472,16 +476,16 @@
 
       .leg-heading {
         flex-basis: 100%;
-        margin-bottom: 2px;
-        font-size: 9px;
+        margin-bottom: 3px;
+        font-size: 10px;
       }
 
       .leg-section {
         flex-basis: 100%;
-        margin: 3px 0 1px;
+        margin: 4px 0 2px;
       }
 
-      .leg-row { font-size: 10px; }
+      .leg-row { font-size: 11px; }
 
       #toast { bottom: 56px; }
     }
@@ -492,7 +496,7 @@
       .slider:before { height: 14px; width: 14px; }
     }
   </style>
-  <link rel="icon" href="https://www.rfc-editor.org/wp-content/uploads/favicon-1.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.rfc-editor.org/api/v1/favicon/32x32.png">
 </head>
 <body>
 
