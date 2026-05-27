@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 9975",
+            "title": "Clarifications on CDS/CDNSKEY and CSYNC Consistency",
+            "date": "2026-05-26 20:45:10",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 9966",
+            "title": "Bootstrapped TLS Authentication with Proof of Knowledge",
+            "date": "2026-05-26 20:11:01",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 9990",
             "title": "Domain-Based Message Authentication, Reporting, and Conformance (DMARC) Aggregate Reporting",
             "date": "2026-05-20 05:25:53",
