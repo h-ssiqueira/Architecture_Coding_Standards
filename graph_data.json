@@ -78163,6 +78163,14 @@
     ],
     "edges": [
         {
+            "source": "RFC 9975",
+            "target": "RFC 7477"
+        },
+        {
+            "source": "RFC 9975",
+            "target": "RFC 7344"
+        },
+        {
             "source": "RFC 9990",
             "target": "RFC 7489"
         },
