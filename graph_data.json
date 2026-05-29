@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 9987",
+            "title": "Secure Shell (SSH) Agent Protocol",
+            "date": "2026-05-28 19:45:47",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 9982",
+            "title": "JSContact Version 2.0: A JSON Representation of Contact Data",
+            "date": "2026-05-28 19:24:29",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 9975",
             "title": "Clarifications on CDS/CDNSKEY and CSYNC Consistency",
             "date": "2026-05-26 20:45:10",
