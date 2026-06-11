@@ -1,6 +1,14 @@
 {
     "nodes": [
         {
+            "id": "RFC 9992",
+            "title": "Routing in Fat Trees (RIFT) Key/Value Topology Information Elements Structure and Processing",
+            "date": "2026-06-11 00:30:39",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 9993",
             "title": "RTP Payload Format for Haptics",
             "date": "2026-05-30 16:33:18",
