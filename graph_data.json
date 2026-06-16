@@ -1,6 +1,30 @@
 {
     "nodes": [
         {
+            "id": "RFC 10008",
+            "title": "The HTTP QUERY Method",
+            "date": "2026-06-16 02:21:35",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 9998",
+            "title": "Report from the IAB/W3C Workshop on Age-Based Restrictions on Content Access",
+            "date": "2026-06-16 00:16:29",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC 9984",
+            "title": "YANG Groupings for UDP Clients and UDP Servers",
+            "date": "2026-06-15 23:17:15",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 9992",
             "title": "Routing in Fat Trees (RIFT) Key/Value Topology Information Elements Structure and Processing",
             "date": "2026-06-11 00:30:39",
