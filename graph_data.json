@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 9888",
+            "title": "Out-of-Band Secure Telephone Identity Revisited (STIR) for Service Providers",
+            "date": "2026-06-19 04:45:32",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 9958",
+            "title": "Post-Quantum Cryptography for Engineers",
+            "date": "2026-06-18 21:32:58",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC 10008",
             "title": "The HTTP QUERY Method",
             "date": "2026-06-16 02:21:35",
