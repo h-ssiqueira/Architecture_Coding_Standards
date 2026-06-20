@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 9986",
+            "title": "Meticulous Keyed ISAAC for Bidirectional Forwarding Detection (BFD) Optimized Authentication",
+            "date": "2026-06-19 21:05:02",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
+            "id": "RFC 9985",
+            "title": "Optimizing Bidirectional Forwarding Detection (BFD) Authentication",
+            "date": "2026-06-19 20:44:06",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
             "id": "RFC 9888",
             "title": "Out-of-Band Secure Telephone Identity Revisited (STIR) for Service Providers",
             "date": "2026-06-19 04:45:32",
