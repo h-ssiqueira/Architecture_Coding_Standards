@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 9994",
+            "title": "MPLS Network Action (MNA) Sub-Stack Specification Including In-Stack Network Actions and Data",
+            "date": "2026-06-27 01:14:49",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10005",
+            "title": "BGP Link Bandwidth Extended Community",
+            "date": "2026-06-26 23:37:55",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 9986",
             "title": "Meticulous Keyed ISAAC for Bidirectional Forwarding Detection (BFD) Optimized Authentication",
             "date": "2026-06-19 21:05:02",
