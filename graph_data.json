@@ -1,6 +1,30 @@
 {
     "nodes": [
         {
+            "id": "RFC 9974",
+            "title": "Operations, Administration, and Maintenance (OAM) Requirements for the Bit Index Explicit Replication (BIER) Layer",
+            "date": "2026-06-29 23:46:59",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC 9978",
+            "title": "Bidirectional Forwarding Detection (BFD) Stability",
+            "date": "2026-06-29 22:54:44",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
+            "id": "RFC 9970",
+            "title": "Connected Identity for Secure Telephone Identity Revisited (STIR)",
+            "date": "2026-06-29 21:25:11",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 9994",
             "title": "MPLS Network Action (MNA) Sub-Stack Specification Including In-Stack Network Actions and Data",
             "date": "2026-06-27 01:14:49",
