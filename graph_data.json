@@ -1,6 +1,46 @@
 {
     "nodes": [
         {
+            "id": "RFC 9980",
+            "title": "Post-Quantum Cryptography in OpenPGP",
+            "date": "2026-06-30 22:51:56",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 9943",
+            "title": "An Architecture for Trustworthy and Transparent Digital Supply Chains",
+            "date": "2026-06-30 22:43:39",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 9942",
+            "title": "CBOR Object Signing and Encryption (COSE) Receipts",
+            "date": "2026-06-30 22:43:04",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10014",
+            "title": "Guidelines for Characterizing the Term \"OAM\"",
+            "date": "2026-06-30 18:02:14",
+            "status": "Best Current Practice",
+            "color": "#1f77b4",
+            "size": 20
+        },
+        {
+            "id": "RFC 10007",
+            "title": "Clarification to Processing Key Usage Values During Certificate Revocation List (CRL) Validation",
+            "date": "2026-06-30 17:50:09",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 9974",
             "title": "Operations, Administration, and Maintenance (OAM) Requirements for the Bit Index Explicit Replication (BIER) Layer",
             "date": "2026-06-29 23:46:59",
