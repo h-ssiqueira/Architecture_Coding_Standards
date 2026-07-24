@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 9997",
+            "title": "YANG-CBOR: Allocating SID Ranges for Private Enterprise Number (PEN) Holders",
+            "date": "2026-07-23 09:28:34",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10026",
+            "title": "Operational Recommendations for DNSSEC Delegation Signer (DS) Automation",
+            "date": "2026-07-23 08:34:29",
+            "status": "Best Current Practice",
+            "color": "#1f77b4",
+            "size": 20
+        },
+        {
             "id": "RFC 10004",
             "title": "Certificate Management over CMS (CMC): Compliance Requirements",
             "date": "2026-07-17 23:17:54",
