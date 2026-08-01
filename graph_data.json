@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 10029",
+            "title": "DNS Multiple QTYPEs",
+            "date": "2026-07-31 21:12:01",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10022",
+            "title": "IMAP UIDBATCHES Extension",
+            "date": "2026-07-31 21:11:11",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10019",
             "title": "Zeroconf Multicast Address Allocation Problem Statement and Requirements",
             "date": "2026-07-31 02:35:13",
