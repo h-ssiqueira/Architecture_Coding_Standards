@@ -1,6 +1,14 @@
 {
     "nodes": [
         {
+            "id": "RFC 10024",
+            "title": "Post-Quantum Traditional (PQ/T) Hybrid Key Agreement Mechanisms for TLS 1.3",
+            "date": "2026-08-10 18:11:15",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10029",
             "title": "DNS Multiple QTYPEs",
             "date": "2026-07-31 21:12:01",
