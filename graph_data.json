@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 10030",
+            "title": "Network Time Protocol (NTP) over the Precision Time Protocol (PTP)",
+            "date": "2026-08-14 22:26:45",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10031",
+            "title": "Media Access Control (MAC) Addresses in X.509 Certificates",
+            "date": "2026-08-14 02:15:54",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 9971",
             "title": "Multiple Loss Ratio Search",
             "date": "2026-08-14 01:43:03",
