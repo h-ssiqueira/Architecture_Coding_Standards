@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 10017",
+            "title": "OAuth 2.0 for Browser-Based Applications",
+            "date": "2026-08-21 21:30:06",
+            "status": "Best Current Practice",
+            "color": "#1f77b4",
+            "size": 20
+        },
+        {
+            "id": "RFC 10036",
+            "title": "Incremental Forwarding of HTTP Messages",
+            "date": "2026-08-21 20:09:09",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10030",
             "title": "Network Time Protocol (NTP) over the Precision Time Protocol (PTP)",
             "date": "2026-08-14 22:26:45",
