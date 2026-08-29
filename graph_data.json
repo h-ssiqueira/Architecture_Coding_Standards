@@ -1,6 +1,30 @@
 {
     "nodes": [
         {
+            "id": "RFC 10037",
+            "title": "Registration Data Access Protocol (RDAP) Extension for DNS Time-to-Live (TTL) Values",
+            "date": "2026-08-28 20:33:25",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10038",
+            "title": "Distributing the Segment Routing over IPv6 (SRv6) Locator Using DHCPv6",
+            "date": "2026-08-28 18:37:58",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10034",
+            "title": "RTP Payload Format for Visual Volumetric Video-Based Coding (V3C)",
+            "date": "2026-08-28 16:08:26",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10035",
             "title": "YANG Library: Addition of the augmented-by List",
             "date": "2026-08-27 01:33:03",
