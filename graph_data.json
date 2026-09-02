@@ -78683,6 +78683,178 @@
     ],
     "edges": [
         {
+            "source": "RFC 10035",
+            "target": "RFC 8525"
+        },
+        {
+            "source": "RFC 10028",
+            "target": "RFC 3307"
+        },
+        {
+            "source": "RFC 10018",
+            "target": "RFC 7988"
+        },
+        {
+            "source": "RFC 10018",
+            "target": "RFC 6514"
+        },
+        {
+            "source": "RFC 10001",
+            "target": "RFC 3901"
+        },
+        {
+            "source": "RFC 10004",
+            "target": "RFC 6402"
+        },
+        {
+            "source": "RFC 10004",
+            "target": "RFC 5274"
+        },
+        {
+            "source": "RFC 10003",
+            "target": "RFC 6402"
+        },
+        {
+            "source": "RFC 10003",
+            "target": "RFC 5273"
+        },
+        {
+            "source": "RFC 10002",
+            "target": "RFC 6402"
+        },
+        {
+            "source": "RFC 10002",
+            "target": "RFC 5272"
+        },
+        {
+            "source": "RFC 9852",
+            "target": "RFC 9325"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 9325"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 8422"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 7905"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 6655"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 6347"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 6367"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 6209"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 5932"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 5487"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 5469"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 5289"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 5288"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 5246"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 4785"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 4346"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 4279"
+        },
+        {
+            "source": "RFC 10015",
+            "target": "RFC 4162"
+        },
+        {
+            "source": "RFC 9973",
+            "target": "RFC 8773"
+        },
+        {
+            "source": "RFC 9933",
+            "target": "RFC 9603"
+        },
+        {
+            "source": "RFC 9933",
+            "target": "RFC 8664"
+        },
+        {
+            "source": "RFC 9919",
+            "target": "RFC 5019"
+        },
+        {
+            "source": "RFC 9918",
+            "target": "RFC 7589"
+        },
+        {
+            "source": "RFC 9916",
+            "target": "RFC 8253"
+        },
+        {
+            "source": "RFC 9846",
+            "target": "RFC 8446"
+        },
+        {
+            "source": "RFC 9846",
+            "target": "RFC 8422"
+        },
+        {
+            "source": "RFC 9846",
+            "target": "RFC 7627"
+        },
+        {
+            "source": "RFC 9846",
+            "target": "RFC 6961"
+        },
+        {
+            "source": "RFC 9846",
+            "target": "RFC 6066"
+        },
+        {
+            "source": "RFC 9846",
+            "target": "RFC 5705"
+        },
+        {
+            "source": "RFC 9846",
+            "target": "RFC 5246"
+        },
+        {
+            "source": "RFC 9846",
+            "target": "RFC 5077"
+        },
+        {
             "source": "RFC 10014",
             "target": "RFC 6291"
         },
@@ -81329,6 +81501,10 @@
         {
             "source": "RFC 8880",
             "target": "RFC 7050"
+        },
+        {
+            "source": "RFC 8808",
+            "target": "RFC 8342"
         },
         {
             "source": "RFC 8892",
