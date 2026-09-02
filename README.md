@@ -57,8 +57,9 @@ ___
 
 Subject | RFC
 :---: | :---:
-UDP | [RFC 768 - User Datagram Protocol](https://www.rfc-editor.org/rfc/rfc768.html)
+UDP | [RFC 768 - User Datagram Protocol](https://www.rfc-editor.org/rfc/rfc768.html)<br>[RFC 9000 - QUIC: A UDP-Based Multiplexed and Secure Transport](https://www.rfc-editor.org/rfc/rfc9000.html)
 IPV4 | [RFC 791 - Internet Protocol](https://datatracker.ietf.org/doc/html/rfc791)
+SSH | [RFC 4253 - The Secure Shell (SSH) Transport Layer Protocol](https://www.rfc-editor.org/rfc/inline-errata/rfc4253.html)
 Email | [RFC 5322 - Internet Message Format](https://www.rfc-editor.org/rfc/inline-errata/rfc5322.html)
 Email Authentication | [RFC 8616 - Email Authentication for Internationalized Mail](https://www.rfc-editor.org/rfc/rfc8616)
 WebSocket | [RFC 6455 - The WebSocket Protocol](https://datatracker.ietf.org/doc/html/rfc6455)
@@ -75,6 +76,7 @@ Subject | RFC
 URI Syntax | [RFC 2396 - Uniform Resource Identifiers (URI): Generic Syntax](https://www.rfc-editor.org/rfc/rfc2396.html)<br>[RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax](https://datatracker.ietf.org/doc/html/rfc3986)
 URI Design | [RFC 8820 - URI Design and Ownership](https://www.rfc-editor.org/rfc/rfc8820.html)
 PATCH | [RFC 5789 - PATCH Method for HTTP](https://datatracker.ietf.org/doc/html/rfc5789)
+QUERY | [RFC 10008 - The HTTP QUERY Method](https://datatracker.ietf.org/doc/html/rfc10008)
 HTTP/1.0 | [RFC 1945 - Hypertext Transfer Protocol -- HTTP/1.0](https://www.rfc-editor.org/info/rfc1945)
 HTTP/1.1 | [RFC 2616 - Hypertext Transfer Protocol -- HTTP/1.1](https://datatracker.ietf.org/doc/html/rfc2616)<br>[RFC 7230 - Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing](https://datatracker.ietf.org/doc/html/rfc7230)<br>[RFC 7231 - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://datatracker.ietf.org/doc/html/rfc7231)<br>[RFC 7232 - Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests](https://datatracker.ietf.org/doc/html/rfc7232)<br>[RFC 7233 - Hypertext Transfer Protocol (HTTP/1.1): Range Requests](https://datatracker.ietf.org/doc/html/rfc7233)<br>[RFC 7234 - Hypertext Transfer Protocol (HTTP/1.1): Caching](https://datatracker.ietf.org/doc/html/rfc7234)<br>[RFC 7235 - Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://datatracker.ietf.org/doc/html/rfc7235)<br>[RFC 9112 - HTTP/1.1](https://www.rfc-editor.org/info/rfc9112)
 HTTP/2 | [RFC 7540 - Hypertext Transfer Protocol Version 2 (HTTP/2)](https://www.rfc-editor.org/info/rfc7540)<br>[RFC 9113 - HTTP/2](https://www.rfc-editor.org/info/rfc9113)
