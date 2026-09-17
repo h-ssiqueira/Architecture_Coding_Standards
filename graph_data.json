@@ -1,6 +1,14 @@
 {
     "nodes": [
         {
+            "id": "RFC 10016",
+            "title": "System-Defined Configuration",
+            "date": "2026-09-16 23:03:42",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10040",
             "title": "Locator/ID Separation Protocol (LISP) Geo-Coordinates",
             "date": "2026-09-15 21:42:54",
