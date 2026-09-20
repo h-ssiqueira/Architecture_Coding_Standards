@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 10050",
+            "title": "Protocol-Specific Profiles for JSContact",
+            "date": "2026-09-19 17:32:38",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10032",
+            "title": "The AEGIS Authenticated Encryption Algorithms",
+            "date": "2026-09-19 04:04:13",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC 10041",
             "title": "Advertising Unreachable Links in OSPF",
             "date": "2026-09-19 03:06:57",
