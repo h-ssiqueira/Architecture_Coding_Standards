@@ -1,6 +1,14 @@
 {
     "nodes": [
         {
+            "id": "RFC 10052",
+            "title": "Performance Measurement with Asymmetrical Traffic Using the Simple Two-Way Active Measurement Protocol (STAMP)",
+            "date": "2026-09-30 17:48:14",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10050",
             "title": "Protocol-Specific Profiles for JSContact",
             "date": "2026-09-19 17:32:38",
