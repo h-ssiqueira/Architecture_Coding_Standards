@@ -1,6 +1,14 @@
 {
     "nodes": [
         {
+            "id": "RFC 10049",
+            "title": "Roughtime: A Protocol for Rough Time Synchronization",
+            "date": "2026-10-05 20:26:04",
+            "status": "Experimental",
+            "color": "#9467bd",
+            "size": 20
+        },
+        {
             "id": "RFC 10052",
             "title": "Performance Measurement with Asymmetrical Traffic Using the Simple Two-Way Active Measurement Protocol (STAMP)",
             "date": "2026-09-30 17:48:14",
