@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 10054",
+            "title": "Computing-Aware Traffic Steering (CATS) Problem Statement, Use Cases, and Requirements",
+            "date": "2026-10-06 21:51:41",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC 10053",
+            "title": "A Framework for Computing-Aware Traffic Steering (CATS)",
+            "date": "2026-10-06 21:50:52",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
             "id": "RFC 10049",
             "title": "Roughtime: A Protocol for Rough Time Synchronization",
             "date": "2026-10-05 20:26:04",
