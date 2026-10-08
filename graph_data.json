@@ -1,6 +1,14 @@
 {
     "nodes": [
         {
+            "id": "RFC 10065",
+            "title": "A YANG Data Model and RADIUS Extension for Policy-Based Network Access Control",
+            "date": "2026-10-08 00:45:22",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10054",
             "title": "Computing-Aware Traffic Steering (CATS) Problem Statement, Use Cases, and Requirements",
             "date": "2026-10-06 21:51:41",
