@@ -78779,6 +78779,30 @@
     ],
     "edges": [
         {
+            "source": "RFC 10041",
+            "target": "RFC 8770"
+        },
+        {
+            "source": "RFC 10041",
+            "target": "RFC 8379"
+        },
+        {
+            "source": "RFC 10041",
+            "target": "RFC 6987"
+        },
+        {
+            "source": "RFC 10041",
+            "target": "RFC 5443"
+        },
+        {
+            "source": "RFC 10016",
+            "target": "RFC 8342"
+        },
+        {
+            "source": "RFC 10040",
+            "target": "RFC 8060"
+        },
+        {
             "source": "RFC 10035",
             "target": "RFC 8525"
         },
