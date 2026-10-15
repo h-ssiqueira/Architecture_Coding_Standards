@@ -73,6 +73,7 @@ ___
 ### REST APIs && Backend
 Subject | RFC
 :---: | :---:
+URI | [RFC 8615 - Well-Known Uniform Resource Identifiers (URIs)](https://www.rfc-editor.org/rfc/rfc8615.html)<br>[Common List](https://www.iana.org/assignments/well-known-uris)
 URI Syntax | [RFC 2396 - Uniform Resource Identifiers (URI): Generic Syntax](https://www.rfc-editor.org/rfc/rfc2396.html)<br>[RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax](https://www.rfc-editor.org/rfc/rfc3986.html)
 URI Design | [RFC 8820 - URI Design and Ownership](https://www.rfc-editor.org/rfc/rfc8820.html)
 PATCH | [RFC 5789 - PATCH Method for HTTP](https://www.rfc-editor.org/rfc/rfc5789.html)
@@ -153,6 +154,9 @@ ISO | Detail
 27951 | Common terminology services
 
 [Back to top](#architecture-and-coding-standards)
+___
+## Standards
+- [ASD-STE100 - Simplified Technical English](https://www.asd-ste100.org/) - [AI skill](https://github.com/danyuchn/asd-ste100-skill)
 ___
 ## References
 - [Data Tracker](https://datatracker.ietf.org/)
