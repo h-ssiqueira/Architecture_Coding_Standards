@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 10067",
+            "title": "Path Computation Element Communication Protocol (PCEP) Extensions for Associated Bidirectional Segment Routing (SR) LSPs",
+            "date": "2026-10-26 19:35:41",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10066",
+            "title": "Path Computation Element Communication Protocol (PCEP) Extensions for Signaling Multipath Information",
+            "date": "2026-10-26 19:20:50",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10055",
             "title": "Configuring UDP Sockets for Explicit Congestion Notification (ECN) for Common Platforms",
             "date": "2026-10-14 22:53:48",
