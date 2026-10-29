@@ -1,6 +1,14 @@
 {
     "nodes": [
         {
+            "id": "RFC 10051",
+            "title": "Task Extensions to iCalendar",
+            "date": "2026-10-28 18:16:54",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10067",
             "title": "Path Computation Element Communication Protocol (PCEP) Extensions for Associated Bidirectional Segment Routing (SR) LSPs",
             "date": "2026-10-26 19:35:41",
@@ -20908,8 +20916,8 @@
             "id": "RFC 7405",
             "title": "Case-Sensitive String Support in ABNF",
             "date": "2014-12-24 05:00:47",
-            "status": "Proposed Standard",
-            "color": "#ffbb78",
+            "status": "Internet Standard",
+            "color": "#d62728",
             "size": 20
         },
         {
