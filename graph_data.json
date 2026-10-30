@@ -1,6 +1,14 @@
 {
     "nodes": [
         {
+            "id": "RFC 10075",
+            "title": "The SNAC Router Flag in ICMPv6 Router Advertisement Messages",
+            "date": "2026-10-29 22:57:57",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10051",
             "title": "Task Extensions to iCalendar",
             "date": "2026-10-28 18:16:54",
