@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 10078",
+            "title": "Problem Statement, Gap Analysis, and Requirements for Intra-Domain Source Address Validation",
+            "date": "2026-10-31 00:35:48",
+            "status": "Informational",
+            "color": "#2ca02c",
+            "size": 20
+        },
+        {
+            "id": "RFC 10080",
+            "title": "Updated Use of the Expires Message Header Field",
+            "date": "2026-10-30 23:45:07",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10075",
             "title": "The SNAC Router Flag in ICMPv6 Router Advertisement Messages",
             "date": "2026-10-29 22:57:57",
