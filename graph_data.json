@@ -1,6 +1,14 @@
 {
     "nodes": [
         {
+            "id": "RFC 10073",
+            "title": "Composite Module-Lattice-Based Digital Signature Algorithm (ML-DSA) for Use in X.509 Public Key Infrastructure",
+            "date": "2026-11-07 01:43:35",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10078",
             "title": "Problem Statement, Gap Analysis, and Requirements for Intra-Domain Source Address Validation",
             "date": "2026-10-31 00:35:48",
