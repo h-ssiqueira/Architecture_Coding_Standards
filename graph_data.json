@@ -1,6 +1,30 @@
 {
     "nodes": [
         {
+            "id": "RFC 10082",
+            "title": "Composite Module-Lattice-Based Digital Signature Algorithm (ML-DSA) for Use in the Cryptographic Message Syntax (CMS)",
+            "date": "2026-11-07 22:08:03",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10070",
+            "title": "Updates to OAuth 2.0 JSON Web Token (JWT) Client Authentication and Assertion-Based Authorization Grants",
+            "date": "2026-11-07 20:51:14",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10069",
+            "title": "Managing Multiple Paths for a QUIC Connection",
+            "date": "2026-11-07 20:12:46",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10073",
             "title": "Composite Module-Lattice-Based Digital Signature Algorithm (ML-DSA) for Use in X.509 Public Key Infrastructure",
             "date": "2026-11-07 01:43:35",
