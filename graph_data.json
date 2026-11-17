@@ -1,6 +1,30 @@
 {
     "nodes": [
         {
+            "id": "RFC 10091",
+            "title": "Extension Registry for the Extensible Provisioning Protocol",
+            "date": "2026-11-17 01:24:08",
+            "status": "Best Current Practice",
+            "color": "#1f77b4",
+            "size": 20
+        },
+        {
+            "id": "RFC 10087",
+            "title": "Extensible Provisioning Protocol (EPP) Transport over QUIC",
+            "date": "2026-11-17 00:35:52",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10063",
+            "title": "Near Real Time Mirroring (NRTM) Version 4",
+            "date": "2026-11-16 20:10:42",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10082",
             "title": "Composite Module-Lattice-Based Digital Signature Algorithm (ML-DSA) for Use in the Cryptographic Message Syntax (CMS)",
             "date": "2026-11-07 22:08:03",
