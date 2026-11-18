@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 10094",
+            "title": "Clarifying Segment Routing over IPv6 (SRv6) Segment Identifier (SID) List Processing",
+            "date": "2026-11-18 02:21:54",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10079",
+            "title": "Updates to the SFrame Cipher Suites Registry",
+            "date": "2026-11-17 20:25:24",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10091",
             "title": "Extension Registry for the Extensible Provisioning Protocol",
             "date": "2026-11-17 01:24:08",
