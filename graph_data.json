@@ -1,6 +1,30 @@
 {
     "nodes": [
         {
+            "id": "RFC 10057",
+            "title": "A YANG Data Model for Traffic Engineering Tunnels, Label Switched Paths, and Interfaces",
+            "date": "2026-11-18 23:48:52",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10056",
+            "title": "Common YANG Data Types for Traffic Engineering",
+            "date": "2026-11-18 23:35:05",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10097",
+            "title": "Tiebreaking Resource Public Key Infrastructure (RPKI) Trust Anchors",
+            "date": "2026-11-18 22:36:47",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10094",
             "title": "Clarifying Segment Routing over IPv6 (SRv6) Segment Identifier (SID) List Processing",
             "date": "2026-11-18 02:21:54",
