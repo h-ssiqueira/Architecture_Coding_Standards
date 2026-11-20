@@ -1,6 +1,22 @@
 {
     "nodes": [
         {
+            "id": "RFC 10021",
+            "title": "Group Object Security for Constrained RESTful Environments (Group OSCORE)",
+            "date": "2026-11-19 18:29:46",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
+            "id": "RFC 10020",
+            "title": "Group Communication for the Constrained Application Protocol (CoAP)",
+            "date": "2026-11-19 18:27:30",
+            "status": "Proposed Standard",
+            "color": "#ffbb78",
+            "size": 20
+        },
+        {
             "id": "RFC 10057",
             "title": "A YANG Data Model for Traffic Engineering Tunnels, Label Switched Paths, and Interfaces",
             "date": "2026-11-18 23:48:52",
